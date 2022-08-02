@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+</head>
+
+<link rel="stylesheet" href="home.css">
+<body>
+    <div style="margin: 5% 0% ;">
+
+
+<!-- Top Employee part -->
+
+    <div id="Employee">
+
+        <div id="htag">
+            <h2>Are you an Employee?</h2> 
+        </div>
+
+        <div id="button1">
+           <button>Search Your Hire</button>
+
+        </div>
+
+        <div id="button2">
+            <button>Post a Job</button>
+        </div>
+    </div>
+
+<!-- till here -->
+
+
+<!-- Heading part -->
+
+   <h2 class="career">Aspire to Senior Roles in Career</h2>
+
+<!-- till here -->
+
+
+
+   <!-- Aspire to senior Roles in career -->
+
+   <div id="Aspirediv">
+    <div>
+        <button class="careerpart">
+            <div>
+            <img id="cto" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2mM5vwi9yMQ1F0hRb0CC-tGOIuvbYrdK1Pg&usqp=CAU" alt="laptop logo">  </div>
+            <div class="strong"> 
+           <strong>chief Technology officer</strong>
+        </div>
+        </button>
+    </div>
+    <div>
+        <button class="careerpart">
+            <div>
+                <img id="Datascience" src="data:image/png;base64,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" alt="laptop logo"></div>
+            <div class="strong">
+                <strong>Data Science Head</strong>
+       </div>
+    </button>
+    </div>
+    <div>
+        <button class="careerpart">
+            <div>
+        <img id="cmo" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnqt8UWWx-D6SVZQbg2hz6ZHYSP7azJtNh2A&usqp=CAU" alt="laptop logo"></div>
+        <div class="strong">
+        <strong>Cheif Marketing Officer</strong>
+        </div>
+    </button>
+    </div>
+    <div>
+        <button class="careerpart">
+            <div>
+        <img id="cpo" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQR8BUQdEOwN2PnVF7XH_e4Yk383BsLaMwYbA&usqp=CAU" alt="laptop logo"></div>
+        <div class="strong"> <strong>Chief Product Officer</strong>
+        </div>
+        
+    </button>
+    </div>
+   </div>
+
+   <a id="ViewAll" href="">View All</a>
+
+   <h4>OR </h4>
+
+<!-- Till here -->
+
+<!-- Expore dream part -->
+
+   <div id="careerpath">
+    <div>
+    <h2>Explore Dream Career of Your Choice</h2>
+    <a href=""><button>Career Planner</button></a>
+</div>
+<div>
+    <img src="https://www.shine.com/next/static/images/explore-dream-career.png" alt="standing man logo">
+</div>
+   </div>
+
+<h2 class="career">Expore our premium Services</h2>
+
+<!-- till here -->
+
+<!-- premium services part -->
+
+
+
+<div id="premiumservices">
+    <div class="premiumchild">
+       <img src="https://static1.shine.com/l/m/product_image/images_all/1640935815_1767.png" alt="application Highlighter logo">
+       <h2>Application Highlighter</h2>
+       <p>
+        Highlight your job application & improve visibility to recruiter. Increase your chances of getting a
+       </p>
+       <h3>
+        &#8377 1699
+       </h3>
+
+       <div class="premiumbutton">
+        <button class="Expore">Expore</button>
+        <button class="expert">Talk to Expert</button>
+       </div>
+
+    </div>
+    <div>
+        <div class="premiumchild">
+            <img src="https://static1.shine.com/l/m/product_image/images_all/1640925161_7427.png" alt="Featured profile logo">
+            <h2 >Featured Profile</h2>
+            <p>Get more visibility in the recruiter seraches by getting a priroity applicant tag with this service</p>
+            <h3>&#8377 1999</h3>
+            
+            <div class="premiumbutton">
+                <button class="Expore">Expore</button>
+                <button class="expert">Talk to Expert</button>
+               </div>
+     
+         </div>
+    </div>
+    <div>
+        <div class="premiumchild">
+            <img src="https://static1.shine.com/l/m/product_image/images_all/1640940094_8952.png" alt="Application booster logo">
+            <h2 >Application Booster</h2>
+            <p>Priority Applicant service to highlight and circulate your profile to the recruiters of your choice.</p>
+            <h3>&#8377 3099</h3>
+            
+            <div class="premiumbutton">
+                <button class="Expore">Expore</button>
+                <button class="expert">Talk to Expert</button>
+               </div>
+     
+         </div>
+    </div>
+</div>
+
+
+<!-- till here -->
+
+<a id="ViewAll" href="">View All</a>
+
+
+<!-- popular course part -->
+
+<h2 class="career">Popular Coures</h2>
+
+<div>
+<ul>
+    <li>All</li>
+    <li>Sales and Marketing</li>
+    <li>Banking Finance</li>
+    <li>Personal Development</li>
+    <li>IT-Information Technology</li>
+    <li>HR-Human Resorces</li>
+    <li>Management</li>
+</ul>
+
+</div>
+
+
+
+<div id="PopularCourse">
+   
+    <div class="coursechild">
+        <span> &nbsp; &nbsp;Course</span>
+        <br>
+        <div class="Java" >
+            <img  class="Dev" src="https://static1.shine.com/l/m/product_image/images_all/1640851375_8085.png" alt="java logo">
+            <p>4.5</p>
+        </div>
+        <div class="javacontent">
+            <h2>Backend Developer <br> in Java</h2>
+            <p>TestPrepTraining</p>
+            <p>Duration: 51 Hours | Mode: Online</p>
+            <h3>&#x20B9; 12999</h3>
+        </div>
+        <div class="coursebutton">
+            <button class="coursexplore">Expore</button>
+            <button class="corseexpert">Buy Now</button>
+           </div>
+       
+    </div>
+
+    <div
+    class="coursechild">
+        <span>&nbsp; &nbsp;Course</span>
+        <br>
+        <div class="Java" >
+            <img class="Dev" src="https://static1.shine.com/l/m/product_image/images_all/1640851637_4621.png" alt="Python logo">
+            <p>4.5</p>
+        </div>
+        <div class="javacontent">
+            <h2>Backend Developer <br> in Phyton </h2>
+            <p>TestPrepTraining</p>
+            <p>Duration: 20 Hours | Mode: Online</p>
+            <h3>&#x20B9; 12999</h3>
+        </div>
+
+       <div class="coursebutton">
+        <button class="coursexplore">Expore</button>
+        <button class="corseexpert">Buy Now</button>
+       </div>
+        
+    </div>
+
+    <div
+    class="coursechild">
+        <span>&nbsp; &nbsp;Course</span>
+        <br>
+        <div class="Java">
+            <img class="Dev" src="https://static1.shine.com/l/m/product_image/images_all/1652953799_9984.png" alt="Node js logo">
+           <p>4.5</p>
+        </div>
+        <div class="javacontent">
+            <h2>Backend Developer <br> in Node.js</h2>
+            <p>TestPrepTraining</p>
+            <p>Duration: 41 Hours | Mode: Online</p>
+            <h3>&#x20B9; 12999</h3>
+        </div>
+
+        <div class="coursebutton">  
+           
+            <button class="coursexplore">Expore</button>
+            <button class="corseexpert">Buy Now</button>
+           
+           </div>
+       
+    </div>
+</div>
+
+
+<a id="ViewAll" href="">View All</a>
+
+
+<div id="Blog">
+    <div>
+        <h2>Latest from Blog</h2></div>
+
+    <div class="blogcontent">
+
+        <div>
+
+            <div class="blogimg">
+                <img src="https://www.shine.com/_next/image?url=https%3A%2F%2Fstatic1.shine.com%2Fl%2Fm%2Fimages%2Fblog%2FMicrosoftTeams-image_2.png&w=1920&q=75" alt="Graph img"></div>
+            <div class="blogh3"><h3>Mint + Shine Talent Insights</h3></div>
+            <div id="blogpmint"><p>Mint + Shine Talent Insights <span></span><span></span></p> </div>
+        </div>    
+
+        <div>
+
+            <div class="blogimg">
+                <img src="https://www.shine.com/_next/image?url=https%3A%2F%2Fstatic1.shine.com%2Fl%2Fm%2Fimages%2Fblog%2Fwhite-collar-jobs.jpg&w=1920&q=75" alt="White collar job"></div>
+            <div class="blogh3"><h3>What Are 'White Collar' Jobs? 10 Jobs to Consider</h3> </div>
+            <div class="blogp"><p>Career Help<span></span><span></span></p> </div>
+        </div>    
+
+        <div>
+
+            <div class="blogimg">
+                <img src="https://www.shine.com/_next/image?url=https%3A%2F%2Fstatic1.shine.com%2Fl%2Fm%2Fimages%2Fblog%2Fonline-form-filling-jobs.png&w=1920&q=75" alt="Online survey"></div>
+            <div class="blogh3"><h3>What you need to know about online form filling jobs</h3></div>
+            <div class="blogp"><p>Career Help <span></span><span></span></p> </div>
+        </div>  
+</div>
+
+
+
+<a id="ViewAll" href="">View All</a>
+</div>
+
+</body>
+</html>
