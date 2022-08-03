@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Jobs 2022 - Search Jobs in India, Latest Job Vacancies, Recruitment -
+      Shine.com
+    </title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
+    />
+  </head>
+  <body>
+    <!------------------ Header Section  ----------------------->
+    <header>
+      <!-- Header Promotion to download the Application or Call -->
+
+      <div
+        id="navbar-container"
+        style="
+          box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+            rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+        "
+      >
+        <div class="header-login-section">
+          <div id="header-login-input">
+            <a href="Index.html"
+              ><img
+                src="https://www.shine.com/next/static/images/shine-logo.png"
+                alt="logo"
+            /></a>
+            <input
+              style="opacity: 0"
+              type="text"
+              placeholder="Job Tittle, Skills"
+            />
+            <button style="opacity: 0">
+              <span class="material-symbols-outlined inputbox-search"
+                >search</span
+              >
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section class="cart-layout-section">
+      <div id="cart-data"></div>
+      <div id="cart-total">
+        <div id="apply-coupon-div">
+          <h4>Apply Coupon</h4>
+          <input placeholder="Coupon Code" />
+          <button>Apply</button>
+        </div>
+        <div id="order-summary-div">
+          <h2>Order Summary</h2>
+          <div id="order-summary-data">
+            <p>Subtotal</p>
+            <h3 id="ak-cart-subtotal"></h3>
+          </div>
+          <div id="order-summary-data">
+            <p>SGST @ 9%</p>
+            <p id="ak-sgst-price"></p>
+          </div>
+          <div id="order-summary-data">
+            <p>CGST @ 9%</p>
+            <p id="ak-cgst-price"></p>
+          </div>
+          <div id="order-summary-data">
+            <h4>Total Payable</h4>
+            <h4 id="ak-total-price-cart"></h4>
+          </div>
+        </div>
+        <a href="#">
+          <button>Proceed to Buy</button>
+        </a>
+      </div>
+    </section>
+
+    <script src="index.js" async></script>
+  </body>
+</html>
