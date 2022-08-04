@@ -1,0 +1,542 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/Users/rahulkhanal/Desktop/weekly project/viewall/viewall.css">
+</head>
+<body>
+    <div>
+        <select id="sortprice" onchange="handleprice()">
+            <option value="">Sort by Price</option>
+            <option value="ascending">High</option>
+            <option value="descending">Low</option>
+        </select>
+
+        <select id="filtercategory" onchange="handlecategory()">
+            <option value="">Filter by category</option>
+            <option value="All">All</option>
+            <option value="Management">Management</option>
+            <option value="HR">HR</option>
+            <option value="Marketing">Marketing</option>
+            <option value="IT">IT</option>
+        </select>
+    </div>
+    <div id="top-cards">
+        <div id="card">
+
+        </div>
+    </div>
+    <div id="totalcards">
+        <div id="cards">
+        
+            <div id="card">
+               <p style="margin-left:10px">Course</p>
+               <div id="grid1">
+                    <div id="flex1">
+                        <img style="border-radius:50%; width:50px"src="https://learning.shine.com/_next/image?url=https%3A%2F%2Fstatic1.shine.com%2Fl%2Fm%2Fproduct_image%2Fimages_all%2F1640851375_8085.png&w=1920&q=75" alt="">
+                        <div id="rating">
+                            <p style="margin-left:10px">4.5</p>
+                            <img style="width:12px;margin-top:17px"src="/Users/rahulkhanal/Desktop/weekly project/viewall/star.png" alt="">
+                        </div>
+                       
+                    </div>
+                    <div id="flex2">
+                        <h3>Backend Developer in Java</h3>
+                        <p>TestPrepTraining</p>
+                        <p>Duration: 51 Hours | Mode: Online</p>
+                        <p> $ 12999</p>
+                    </div>
+               </div>
+    
+               <hr>
+               <div id="grid2">
+                <div>
+                    <h4 style="color:#7c44ff">Explore</h4>
+                </div>
+                <div>
+                    <h4 id="buynow">Buy now</h4>
+                    
+                </div>
+    
+               </div>
+            </div>
+    
+    
+            <div id="card">
+                <p style="margin-left:10px">Course</p>
+                <div id="grid1">
+                     <div id="flex1">
+                         <img style="border-radius:50%; width:50px"src="https://learning.shine.com/_next/image?url=https%3A%2F%2Fstatic1.shine.com%2Fl%2Fm%2Fproduct_image%2Fimages_all%2F1640851375_8085.png&w=1920&q=75" alt="">
+                         <div id="rating">
+                             <p style="margin-left:10px">4.5</p>
+                             <img style="width:12px;margin-top:17px"src="/Users/rahulkhanal/Desktop/weekly project/viewall/star.png" alt="">
+                         </div>
+                        
+                     </div>
+                     <div id="flex2">
+                         <h3>Backend Developer in Python</h3>
+                         <p>TestPrepTraining</p>
+                         <p>Duration: 51 Hours | Mode: Online</p>
+                         <p> $ 12999</p>
+                     </div>
+                </div>
+     
+                <hr>
+                <div id="grid2">
+                 <div>
+                     <h4 style="color:#7c44ff">Explore</h4>
+                 </div>
+                 <div>
+                     <h4 id="buynow">Buy now</h4>
+                     
+                 </div>
+     
+                </div>
+             </div>
+    
+             <div id="card">
+                <p style="margin-left:10px">Course</p>
+                <div id="grid1">
+                     <div id="flex1">
+                         <img style="border-radius:50%; width:50px"src="https://learning.shine.com/_next/image?url=https%3A%2F%2Fstatic1.shine.com%2Fl%2Fm%2Fproduct_image%2Fimages_all%2F1640851375_8085.png&w=1920&q=75" alt="">
+                         <div id="rating">
+                             <p style="margin-left:10px">4.5</p>
+                             <img style="width:12px;margin-top:17px"src="/Users/rahulkhanal/Desktop/weekly project/viewall/star.png" alt="">
+                         </div>
+                        
+                     </div>
+                     <div id="flex2">
+                         <h3>Backend Developer in Node.js</h3>
+                         <p>TestPrepTraining</p>
+                         <p>Duration: 51 Hours | Mode: Online</p>
+                         <p> $ 12999</p>
+                     </div>
+                </div>
+     
+                <hr>
+                <div id="grid2">
+                 <div>
+                     <h4 style="color:#7c44ff">Explore</h4>
+                 </div>
+                 <div>
+                     <h4 id="buynow">Buy now</h4>
+                     
+                 </div>
+     
+                </div>
+             </div>
+    
+        </div>
+    
+        <h1 style="margin-left:70px;margin-top:50px;">Shine Advantage</h1>
+        <div id="grid78">
+            <div>
+                <img src="https://learning.shine.com/_next/image?url=https%3A%2F%2Fstatic1.shine.com%2Fl%2Fm%2Fimages%2Fhomepage%2Fbanner%2FFanatical_support_for_outcome.png&w=640&q=75" alt="">
+            </div>
+            <div>
+                <img src="https://learning.shine.com/_next/image?url=https%3A%2F%2Fstatic1.shine.com%2Fl%2Fm%2Fimages%2Fhomepage%2Fbanner%2FJob_Assistance.png&w=640&q=75" alt="">
+            </div>
+        </div>
+    
+    
+        <div style="margin-top:-170px">
+    
+            <div id="cards">
+                <div id="card">
+                   <p style="margin-left:10px">Course</p>
+                   <div id="grid1">
+                        <div id="flex1">
+                            <img style="border-radius:50%; width:50px"src="https://learning.shine.com/_next/image?url=https%3A%2F%2Fstatic1.shine.com%2Fl%2Fm%2Fproduct_image%2Fimages_all%2F1652953980_7255.png&w=1920&q=75" alt="">
+                            <div id="rating">
+                                <p style="margin-left:10px">4.5</p>
+                                <img style="width:12px;margin-top:17px"src="/Users/rahulkhanal/Desktop/weekly project/viewall/star.png" alt="">
+                            </div>
+                           
+                        </div>
+                        <div id="flex2">
+                            <h3>Backend Developer in .Net</h3>
+                            <p>TestPrepTraining</p>
+                            <p>Duration: 51 Hours | Mode: Online</p>
+                            <p> $ 12999</p>
+                        </div>
+                   </div>
+        
+                   <hr>
+                   <div id="grid2">
+                    <div>
+                        <h4 style="color:#7c44ff">Explore</h4>
+                    </div>
+                    <div>
+                        <h4 id="buynow">Buy now</h4>
+                        
+                    </div>
+        
+                   </div>
+                </div>
+        
+        
+                <div id="card">
+                    <p style="margin-left:10px">Course</p>
+                    <div id="grid1">
+                         <div id="flex1">
+                             <img style="border-radius:50%; width:50px"src="https://learning.shine.com/_next/image?url=https%3A%2F%2Fstatic1.shine.com%2Fl%2Fm%2Fproduct_image%2Fimages_all%2F1652954044_279.png&w=1920&q=75" alt="">
+                             <div id="rating">
+                                 <p style="margin-left:10px">4.5</p>
+                                 <img style="width:12px;margin-top:17px"src="/Users/rahulkhanal/Desktop/weekly project/viewall/star.png" alt="">
+                             </div>
+                            
+                         </div>
+                         <div id="flex2">
+                             <h3>Backend Developer in Java</h3>
+                             <p>TestPrepTraining</p>
+                             <p>Duration: 51 Hours | Mode: Online</p>
+                             <p> $ 12999</p>
+                         </div>
+                    </div>
+         
+                    <hr>
+                    <div id="grid2">
+                     <div>
+                         <h4 style="color:#7c44ff">Explore</h4>
+                     </div>
+                     <div>
+                         <h4 id="buynow">Buy now</h4>
+                         
+                     </div>
+         
+                    </div>
+                 </div>
+        
+                 <div id="card">
+                    <p style="margin-left:10px">Course</p>
+                    <div id="grid1">
+                         <div id="flex1">
+                             <img style="border-radius:50%; width:50px"src="https://learning.shine.com/_next/image?url=https%3A%2F%2Fstatic1.shine.com%2Fl%2Fm%2Fproduct_image%2Fimages_all%2F1640853726_1126.png&w=1920&q=75" alt="">
+                             <div id="rating">
+                                 <p style="margin-left:10px">4.5</p>
+                                 <img style="width:12px;margin-top:17px"src="/Users/rahulkhanal/Desktop/weekly project/viewall/star.png" alt="">
+                             </div>
+                            
+                         </div>
+                         <div id="flex2">
+                             <h3>Backend Developer in Java</h3>
+                             <p>TestPrepTraining</p>
+                             <p>Duration: 51 Hours | Mode: Online</p>
+                             <p> $ 12999</p>
+                         </div>
+                    </div>
+         
+                    <hr>
+                    <div id="grid2">
+                     <div>
+                         <h4 style="color:#7c44ff">Explore</h4>
+                     </div>
+                     <div>
+                         <h4 id="buynow">Buy now</h4>
+                         
+                     </div>
+         
+                    </div>
+                 </div>
+        
+                 <div id="card">
+                    <p style="margin-left:10px">Course</p>
+                    <div id="grid1">
+                         <div id="flex1">
+                             <img style="border-radius:50%; width:50px"src="https://learning.shine.com/_next/image?url=https%3A%2F%2Fstatic1.shine.com%2Fl%2Fm%2Fproduct_image%2Fimages_all%2F1652954087_2845.png&w=1920&q=75" alt="">
+                             <div id="rating">
+                                 <p style="margin-left:10px">4.5</p>
+                                 <img style="width:12px;margin-top:17px"src="/Users/rahulkhanal/Desktop/weekly project/viewall/star.png" alt="">
+                             </div>
+                            
+                         </div>
+                         <div id="flex2">
+                             <h3>Backend Developer in Java</h3>
+                             <p>TestPrepTraining</p>
+                             <p>Duration: 51 Hours | Mode: Online</p>
+                             <p> $ 12999</p>
+                         </div>
+                    </div>
+         
+                    <hr>
+                    <div id="grid2">
+                     <div>
+                         <h4 style="color:#7c44ff">Explore</h4>
+                     </div>
+                     <div>
+                         <h4 id="buynow">Buy now</h4>
+                         
+                     </div>
+         
+                    </div>
+                 </div>
+        
+                 <div id="card">
+                    <p style="margin-left:10px">Course</p>
+                    <div id="grid1">
+                         <div id="flex1">
+                             <img style="border-radius:50%; width:50px"src="https://learning.shine.com/_next/image?url=https%3A%2F%2Fstatic1.shine.com%2Fl%2Fm%2Fattachment%2Fdefault_product_image.jpg&w=1920&q=75" alt="">
+                             <div id="rating">
+                                 <p style="margin-left:10px">4.5</p>
+                                 <img style="width:12px;margin-top:17px"src="/Users/rahulkhanal/Desktop/weekly project/viewall/star.png" alt="">
+                             </div>
+                            
+                         </div>
+                         <div id="flex2">
+                             <h3>Backend Developer in Java</h3>
+                             <p>TestPrepTraining</p>
+                             <p>Duration: 51 Hours | Mode: Online</p>
+                             <p> $ 12999</p>
+                         </div>
+                    </div>
+         
+                    <hr>
+                    <div id="grid2">
+                     <div>
+                         <h4 style="color:#7c44ff">Explore</h4>
+                     </div>
+                     <div>
+                         <h4 id="buynow">Buy now</h4>
+                         
+                     </div>
+         
+                    </div>
+                 </div>
+        
+                 <div id="card">
+                    <p style="margin-left:10px">Course</p>
+                    <div id="grid1">
+                         <div id="flex1">
+                             <img style="border-radius:50%; width:50px"src="https://learning.shine.com/_next/image?url=https%3A%2F%2Fstatic1.shine.com%2Fl%2Fm%2Fproduct_image%2Fimages_all%2F1542800087_8980.png&w=1920&q=75" alt="">
+                             <div id="rating">
+                                 <p style="margin-left:10px">4.5</p>
+                                 <img style="width:12px;margin-top:17px"src="/Users/rahulkhanal/Desktop/weekly project/viewall/star.png" alt="">
+                             </div>
+                            
+                         </div>
+                         <div id="flex2">
+                             <h3>Backend Developer in Java</h3>
+                             <p>TestPrepTraining</p>
+                             <p>Duration: 51 Hours | Mode: Online</p>
+                             <p> $ 12999</p>
+                         </div>
+                    </div>
+         
+                    <hr>
+                    <div id="grid2">
+                     <div>
+                         <h4 style="color:#7c44ff">Explore</h4>
+                     </div>
+                     <div>
+                         <h4 id="buynow">Buy now</h4>
+                         
+                     </div>
+         
+                    </div>
+                 </div>
+        
+                 <div id="card">
+                    <p style="margin-left:10px">Course</p>
+                    <div id="grid1">
+                         <div id="flex1">
+                             <img style="border-radius:50%; width:50px"src="https://learning.shine.com/_next/image?url=https%3A%2F%2Fstatic1.shine.com%2Fl%2Fm%2Fproduct_image%2Fimages_all%2F1508900890_4134.png&w=1920&q=75" alt="">
+                             <div id="rating">
+                                 <p style="margin-left:10px">4.5</p>
+                                 <img style="width:12px;margin-top:17px"src="/Users/rahulkhanal/Desktop/weekly project/viewall/star.png" alt="">
+                             </div>
+                            
+                         </div>
+                         <div id="flex2">
+                             <h3>Backend Developer in Java</h3>
+                             <p>TestPrepTraining</p>
+                             <p>Duration: 51 Hours | Mode: Online</p>
+                             <p> $ 12999</p>
+                         </div>
+                    </div>
+         
+                    <hr>
+                    <div id="grid2">
+                     <div>
+                         <h4 style="color:#7c44ff">Explore</h4>
+                     </div>
+                     <div>
+                         <h4 id="buynow">Buy now</h4>
+                         
+                     </div>
+         
+                    </div>
+                 </div>
+        
+                 <div id="card">
+                    <p style="margin-left:10px">Course</p>
+                    <div id="grid1">
+                         <div id="flex1">
+                             <img style="border-radius:50%; width:50px"src="https://learning.shine.com/_next/image?url=https%3A%2F%2Fstatic1.shine.com%2Fl%2Fm%2Fproduct_image%2Fimages_all%2F1652954139_2930.png&w=1920&q=75" alt="">
+                             <div id="rating">
+                                 <p style="margin-left:10px">4.5</p>
+                                 <img style="width:12px;margin-top:17px"src="/Users/rahulkhanal/Desktop/weekly project/viewall/star.png" alt="">
+                             </div>
+                            
+                         </div>
+                         <div id="flex2">
+                             <h3>Backend Developer in Java</h3>
+                             <p>TestPrepTraining</p>
+                             <p>Duration: 51 Hours | Mode: Online</p>
+                             <p> $ 12999</p>
+                         </div>
+                    </div>
+         
+                    <hr>
+                    <div id="grid2">
+                     <div>
+                         <h4 style="color:#7c44ff">Explore</h4>
+                     </div>
+                     <div>
+                         <h4 id="buynow">Buy now</h4>
+                         
+                     </div>
+         
+                    </div>
+                 </div>
+        
+                 <div id="card">
+                    <p style="margin-left:10px">Course</p>
+                    <div id="grid1">
+                         <div id="flex1">
+                             <img style="border-radius:50%; width:50px"src="https://learning.shine.com/_next/image?url=https%3A%2F%2Fstatic1.shine.com%2Fl%2Fm%2Fproduct_image%2Fimages_all%2F1564143982_3906.png&w=1920&q=75" alt="">
+                             <div id="rating">
+                                 <p style="margin-left:10px">4.5</p>
+                                 <img style="width:12px;margin-top:17px"src="/Users/rahulkhanal/Desktop/weekly project/viewall/star.png" alt="">
+                             </div>
+                            
+                         </div>
+                         <div id="flex2">
+                             <h3>Backend Developer in Java</h3>
+                             <p>TestPrepTraining</p>
+                             <p>Duration: 51 Hours | Mode: Online</p>
+                             <p> $ 12999</p>
+                         </div>
+                    </div>
+         
+                    <hr>
+                    <div id="grid2">
+                     <div>
+                         <h4 style="color:#7c44ff">Explore</h4>
+                     </div>
+                     <div>
+                         <h4 id="buynow">Buy now</h4>
+                         
+                     </div>
+         
+                    </div>
+                 </div>
+        
+                 <div id="card">
+                    <p style="margin-left:10px">Course</p>
+                    <div id="grid1">
+                         <div id="flex1">
+                             <img style="border-radius:50%; width:50px"src="https://learning.shine.com/_next/image?url=https%3A%2F%2Fstatic1.shine.com%2Fl%2Fm%2Fproduct_image%2Fimages_all%2F1634126540_4125.png&w=1920&q=75" alt="">
+                             <div id="rating">
+                                 <p style="margin-left:10px">4.5</p>
+                                 <img style="width:12px;margin-top:17px"src="/Users/rahulkhanal/Desktop/weekly project/viewall/star.png" alt="">
+                             </div>
+                            
+                         </div>
+                         <div id="flex2">
+                             <h3>Certified HR Analytics Professional</h3>
+                             <p>TestPrepTraining</p>
+                             <p>Duration: 51 Hours | Mode: Online</p>
+                             <p> $ 12999</p>
+                         </div>
+                    </div>
+         
+                    <hr>
+                    <div id="grid2">
+                     <div>
+                         <h4 style="color:#7c44ff">Explore</h4>
+                     </div>
+                     <div>
+                         <h4 id="buynow">Buy now</h4>
+                         
+                     </div>
+         
+                    </div>
+                 </div>
+        
+                 <div id="card">
+                    <p style="margin-left:10px">Course</p>
+                    <div id="grid1">
+                         <div id="flex1">
+                             <img style="border-radius:50%; width:50px"src="https://learning.shine.com/_next/image?url=https%3A%2F%2Fstatic1.shine.com%2Fl%2Fm%2Fproduct_image%2Fimages_all%2F1640689215_9063.png&w=1920&q=75" alt="">
+                             <div id="rating">
+                                 <p style="margin-left:10px">4.5</p>
+                                 <img style="width:12px;margin-top:17px"src="/Users/rahulkhanal/Desktop/weekly project/viewall/star.png" alt="">
+                             </div>
+                            
+                         </div>
+                         <div id="flex2">
+                             <h3>Management Bootcamp</h3>
+                             <p>TestPrepTraining</p>
+                             <p>Duration: 51 Hours | Mode: Online</p>
+                             <p> $ 12999</p>
+                         </div>
+                    </div>
+         
+                    <hr>
+                    <div id="grid2">
+                     <div>
+                         <h4 style="color:#7c44ff">Explore</h4>
+                     </div>
+                     <div>
+                         <h4 id="buynow">Buy now</h4>
+                         
+                     </div>
+         
+                    </div>
+                 </div>
+        
+                 <div id="card">
+                   <p style="margin-left:10px">Course</p>
+                   <div id="grid1">
+                        <div id="flex1">
+                            <img style="border-radius:50%; width:50px"src="https://learning.shine.com/_next/image?url=https%3A%2F%2Fstatic1.shine.com%2Fl%2Fm%2Fproduct_image%2Fimages_all%2F1508160736_4805.png&w=1920&q=75" alt="">
+                            <div id="rating">
+                                <p style="margin-left:10px">4.5</p>
+                                <img style="width:12px;margin-top:17px"src="/Users/rahulkhanal/Desktop/weekly project/viewall/star.png" alt="">
+                            </div>
+                           
+                        </div>
+                        <div id="flex2">
+                            <h3>Management Fundamentals Training Course</h3>
+                            <p>TestPrepTraining</p>
+                            <p>Duration: 51 Hours | Mode: Online</p>
+                            <p> $ 12999</p>
+                        </div>
+                   </div>
+        
+                   <hr>
+                   <div id="grid2">
+                    <div>
+                        <h4 style="color:#7c44ff">Explore</h4>
+                    </div>
+                    <div>
+                        <h4 id="buynow">Buy now</h4>
+                        
+                    </div>
+        
+                   </div>
+                </div>
+        
+            </div>
+    
+        </div>
+
+    </div>
+   
+   
+
+<script src="viewallfilter.js"></script>
+</body>
+</html>
