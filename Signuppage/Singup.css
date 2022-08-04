@@ -1,0 +1,359 @@
+h1{
+    text-align: center;
+    font-family: sans-serif;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+#gp{
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    margin: auto;
+   place-content: right;
+   margin-top: 10%;
+   margin-bottom: 10%;
+   box-shadow: 0 0 10px 0 rgb(0 0 0 / 15%);
+}
+
+#parent{
+    width: 140%;
+    margin-top: 7%;
+    margin-bottom: 7%;
+    margin-left: 5px;
+   
+}
+
+#parent2{
+    width: 60%;
+    margin-left: 40%;
+    margin-top: 7%;
+    
+
+}
+
+#autofill{
+    width: 50%;
+    cursor: pointer;
+    height: 45px;
+    font-family: sans-serif;
+    border: 1px solid #8652ff;
+    border-radius: 5px;
+}
+
+.child1{
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 13px;
+}
+
+h4{
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 15px;
+    margin-bottom: 30px;
+}
+
+
+
+#form{
+     display: grid;
+     grid-template-columns: repeat(2,1fr);
+     gap: 20px;
+     width: 97%;
+     margin-left: 20px;
+     margin-bottom: 20xp;
+     box-sizing: border-box;
+   
+}
+
+
+.formname{
+    position: relative; 
+    
+}
+
+.textbox{
+    outline: none;
+    background:none;
+    padding: 6px;
+    border-radius: 5px;
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border:1px solid #e2e2e2;
+    font-family: sans-serif;
+    box-sizing: border-box;
+
+}
+
+.label{
+    position: absolute;
+    top: 0.6rem;
+    left: 1.4rem;
+    cursor: text;
+    font-family: sans-serif;
+    color:#5c5b5b ;
+    transition: top 200ms ease-in,left 200ms ease-in, font-size 200ms ease-in;
+    
+}
+
+
+.textbox:focus
+{
+    border:1px solid #8652ff;
+
+}
+
+.textbox:focus::after{
+    top:-0.4rem;
+    left:0.5rem;
+
+}
+
+.textbox:focus~label
+.textbox:valid~label
+
+{
+
+    position: absolute;
+    top:-0.4rem;
+    left:0.5rem;
+    font-size: 12px;
+    background-color: white;
+    transform: translate(10%);
+
+
+}
+
+
+
+
+
+
+
+#formskill{
+    position: relative; 
+}
+
+#textboxskill{
+    outline: none;
+    background:none;
+    padding: 6px;
+    border-radius: 5px;
+    width: 205%;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    border:1px solid #e2e2e2;
+    font-family: sans-serif;
+    box-sizing: border-box;
+
+}
+
+#labelSkill
+{
+    position: absolute;
+    top: 0.6rem;
+    left: 1.4rem;
+    cursor: text;
+    font-family: sans-serif;
+    color:#5c5b5b ;
+    transition: top 200ms ease-in,left 200ms ease-in,font-size 200ms ease-in;
+
+}
+#labelSkill,#textboxskill:invalid{
+    top:-0.3rem;
+    left:0.5rem;
+    font-size: 12px;
+    background: white;
+
+   
+
+
+}
+#textboxskill:focus{
+    background-color: 2px solid purple;
+}
+
+
+#textboxskill:focus ~#labelSkill,
+ #textboxskill:not(:focus)~ .labelSkill{
+    top:-0.3rem;
+    left:0.5rem;
+    font-size: 12px;
+    background: white;
+
+}
+
+
+span{
+    font-family: sans-serif;
+    color:#5c5b5b ;
+    font-size: 13px;
+}
+
+
+#resume{
+    margin-top: 10%;
+ 
+
+}
+
+#resume button{
+    padding: 0px 40px;
+    font-size: 14px;
+    font-weight: 700;
+    text-align: center;
+    font-family: sans-serif;
+    text-decoration-color: black;
+    border: 1.5px solid  #8652ff;
+    cursor: pointer;
+   
+    
+
+}
+
+#resume button i{
+    margin-right:20px;
+    font-size: 20px;
+}
+
+#resume button span{
+    font-size: 12px;
+    font-family: sans-serif;
+    font-weight: 200;
+
+
+}
+
+
+#file p{
+
+    font-family: sans-serif;
+    font-size: 12px;
+}
+
+#radio{
+    width: 60%;
+    margin: auto;
+    
+}
+#register{
+    text-align: center;
+    margin-top: 5%;
+   
+}
+#register button{
+
+    padding-top: 14px;
+    padding-bottom: 14px;
+   width: 15%;
+   background-color: #8652ff;
+   border: none;
+   text-align: center;
+   font-family: sans-serif;
+   font-weight: 700;
+   border-radius: 5px;
+   cursor: pointer;
+   color: white;
+   font-size: 15px;
+   transition: all 0.3 ease;
+   
+   
+
+}
+
+#register input[type="text"]::placeholder{
+    color: white;
+    opacity: 1;
+    font-size: 17px;
+
+}
+
+
+#parent2 p{
+    margin-top: 90%;
+    margin-left:10%;
+    font-family: sans-serif;
+    font-weight: 500;
+
+}
+
+#signuplogo {
+    display: grid;
+    grid-template-rows:(3,1fr) ;
+    gap: 15px;
+    width: 33%;
+    place-items: center;
+    margin: auto;
+    margin-top: -30%;
+}
+
+#googlelogo{
+     display: grid;
+     grid-template-columns: repeat(2,1fr);
+     width: 100%;
+     height: 50px;
+     box-shadow: 0 0 10px 0 rgb(0 0 0 / 15%);
+     cursor: pointer;
+}
+
+#Linkdlogo{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    width: 100%;
+    box-shadow: 0 0 10px 0 rgb(0 0 0 / 15%);
+    height: 50px;
+    cursor: pointer;
+    
+}
+
+#fblogo{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    width: 100%;
+    box-shadow: 0 0 10px 0 rgb(0 0 0 / 15%);
+    height: 50px;
+    cursor: pointer;
+}
+
+
+#googlelogo img{
+    width: 40%;
+    margin-top: 15px;
+    margin-left: 5px;
+}
+#Linkdlogo img{
+    width: 40%;
+    margin-top: 17px;
+    margin-left: 5px;
+}
+
+#fblogo img{
+    width: 50%;
+    margin-top: 17px;
+    margin-left: 5px;
+}
+
+
+#googlelogo h4{
+    margin-right: 15px;
+    margin-top: 15px;
+    font-size: 14px;
+    color:#5c5b5b ;
+}
+#Linkdlogo h4{
+    margin-right: 10px;
+    margin-top: 15px;
+    font-size: 14px;
+    color:#5c5b5b ;
+}
+
+#fblogo h4{
+    margin-right: 10px;
+    margin-top: 15px;
+    font-size: 14px;
+    color:#5c5b5b ;
+}

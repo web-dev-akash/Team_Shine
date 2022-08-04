@@ -1,0 +1,308 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.mid{
+    position:absolute; 
+    top:0%; 
+    left:94%; 
+    transform:translate(-50%,-50%);
+    margin-top:20px;
+}
+
+#signup{
+    
+    padding:10px 20px; 
+    font-size:15px; 
+    font-weight:600; 
+    color:white;
+    background-color: #8652ff;
+    border:none;
+    border-radius: 5px;
+    cursor:pointer; 
+}
+
+
+.popup{
+   position:absolute; 
+   opacity: 0;
+   width: 60%;
+   left:20%;
+   top: 6%;
+   margin-top: 50px;
+   padding-top: 20px;
+   box-shadow: 0 0 10px 0 rgb(0 0 0 / 15%);
+   border-radius:10px; 
+
+
+}
+
+.popup.active
+ 
+{
+   opacity:1; 
+
+}
+
+.closebtn{
+    position :absolute;
+    top:10px;
+    right:17px; 
+    width:17px;
+    height:17px; 
+    color:#888; 
+    line-height:25px; 
+    font-size: 40px;
+    cursor:pointer;
+    font-weight: 700;
+    
+}
+
+
+.main{
+    display: grid;
+    grid-template-columns:repeat(2,1fr);
+    height: 400px;
+    width: 90%;
+    margin: auto;
+} 
+
+
+
+.left{
+    width: 100%;
+}
+
+
+.left h2{
+
+    color:#222; 
+    margin: 25px 0px;
+    font-size:30px;
+    font-family: sans-serif;
+}
+
+.form{
+    position: relative;
+    margin: 15px 0px;
+}
+
+.label{
+    position: absolute;
+    top: 0.8rem;
+    left: 1.4rem;
+    cursor: text;
+    font-family: sans-serif;
+    color:#47535e;
+    transition: top 200ms ease-in,left 200ms ease-in, font-size 200ms ease-in;
+    
+}
+
+.textbox:focus ~.label,.textbox:not(:placeholder-shown) .textbox:not(:focus)~.label{
+    top:-0.1rem;
+    left:0.5rem;
+    font-size: 12px;
+    background: white;
+
+}
+
+
+
+.form input[type="text"],
+.form input[type="password"]{
+
+ margin-top: 5px;
+ padding: 10px;
+ width: 80%;
+ border: 1px solid #232434;
+ border-radius: 5px;
+
+
+}
+
+.form input[type="text"]:focus,
+.form input[type="password"]:focus{
+
+    border:1 px solid #8652ff;
+}
+
+
+.form button{
+    width: 69%;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+
+}
+
+.form button:focus{
+    border:1 px solid #8652ff;
+}
+
+
+
+#loginbtn{
+    background-color: #8652ff;
+    color:white;
+    font-weight: 550;
+    font-family: sans-serif;
+    font-size: 13px;
+}
+
+.form h4{
+
+    font-weight: 400;
+    font-family: sans-serif;
+    font-size: 20px;
+    text-align: center;
+    margin-right: 30%;
+}
+
+#otpbtn{
+    color: #8652ff;
+    font-weight: 600;
+    font-family: sans-serif;
+    font-size: 15px;
+    background-color: white;
+    border: 1px solid #8652ff;;
+    
+}
+
+#signedin{
+    font-size: 14px;
+    font-family: sans-serif;
+   
+}
+
+#signedin span{
+    text-decoration: underline;
+    margin-left: 12%;
+    color: #8652ff;
+    cursor: pointer;
+}
+
+.right{
+    height: 400px;
+    width: 90%;
+    
+}
+
+#signuplogo{
+   width: 80%;
+   display: grid;
+   grid-template-columns: repeat(1,1fr);
+   margin: auto;
+   margin-top: 25%;
+   gap: 20px;
+
+}
+#googlelogo{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    box-shadow: 0 0 10px 0 rgb(0 0 0 / 15%);
+    cursor: pointer;
+}
+
+#googlelogo img{
+ 
+    width: 8%;
+    margin-left: 5px;
+    margin-right: 20px;
+
+
+}
+
+#googlelogo h4{
+
+    font-family: sans-serif;
+    font-size: 15px;
+    color:#47535e;
+   
+}
+
+#Linkdlogo{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    box-shadow: 0 0 10px 0 rgb(0 0 0 / 15%);
+    cursor: pointer;
+
+
+}
+
+#Linkdlogo img{
+    width: 8%;
+    margin-left: 5px;
+    margin-right: 20px;
+
+}
+#Linkdlogo h4{
+    font-family: sans-serif;
+    font-size: 15px;
+    color:#47535e;
+}
+
+#fblogo{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    box-shadow: 0 0 10px 0 rgb(0 0 0 / 15%);
+    cursor: pointer;
+}
+
+
+#fblogo img{
+   width: 8%;
+    margin-left: 5px;
+    margin-right: 20px;
+
+}
+
+#fblogo h4{
+   font-family: sans-serif;
+   font-size: 15px;
+   color:#47535e;
+
+}
+
+#noaccount{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: #f3fdfb;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-radius: 0px 0px 7px 7px;
+    
+}
+
+#noaccount h3{
+    font-family: sans-serif;
+    font-size: 20px;
+    color:#47535e; 
+    margin-right: 7px;  
+}
+
+#noaccount button{
+    padding:7px 17px; 
+    font-size:14px; 
+    font-weight:550; 
+    color:white;
+    background-color: #8652ff;
+    border:none;
+    border-radius: 5px;
+    cursor:pointer; 
+}
+
+
