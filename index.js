@@ -204,9 +204,11 @@ function emptyCart() {
 }
 
 var cartPageData = JSON.parse(localStorage.getItem("cart-items")) || [];
-function displayProducts() {
+
+// var itemsInCart = [];
+function displayProducts(datacart) {
   var totalCost = 0;
-  cartPageData.map(function (elem, index) {
+  datacart.map(function (elem, index) {
     // cart items div---------------------------
 
     var divMain = document.createElement("div");
@@ -246,14 +248,29 @@ function displayProducts() {
     var totalPayble = totalCost + sgstPrice + cgstPrice;
     document.getElementById("ak-total-price-cart").innerText =
       "₹ " + totalPayble.toFixed(2);
+
+    deleteBtn.addEventListener("click", function () {
+      removeItem(index);
+    });
+    //function call for remove the item from cart------------------------------
+
+    // }
   });
 }
 
-var cart = document.querySelectorAll("#corseexpert");
+//function call for remove the item from cart------------------------------
+// for (let i = 0; i < itemsInCart.length; i++) {
+//   itemsInCart[i].addEventListener("click", function () {
+//     removeItem(i);
+//     // console.log("remove" + i);
+//   });
+// }
 
+var cart = document.querySelectorAll("#corseexpert");
 for (let i = 0; i < cart.length; i++) {
   cart[i].addEventListener("click", function () {
     addToCart(i);
+    // console.log(cart[i]);
   });
 }
 
@@ -262,17 +279,37 @@ function addToCart(index) {
   var course = courseData.filter(function (elem, i) {
     return i == index;
   });
-  // if (!cartArr.includes(course[0].name)) {
-  //   console.log();
-  cartArr.push(course[0]);
-  //   }
-
+  // console.log();
+  var flag = false;
+  for (let j = 0; j < cartArr.length; j++) {
+    if (cartArr[j].name === course[0].name) {
+      flag = true;
+    }
+  }
+  if (!flag) {
+    cartArr.push(course[0]);
+  } else {
+    alert("This Course is Already Present in your Cart");
+  }
   localStorage.setItem("cart-items", JSON.stringify(cartArr));
 }
 if (cartArr.length === 0) {
   emptyCart();
 } else {
-  displayProducts();
+  displayProducts(cartPageData);
 }
 
-window.onload = console.log(cartArr[0].name);
+// function to remove the item from cart-------------------------------------
+
+function removeItem(index) {
+  document.getElementById("cart-data").innerText = "";
+  var oldCart = JSON.parse(localStorage.getItem("cart-items")) || [];
+  var removedCartItem = oldCart.filter(function (elem, i) {
+    return i !== index;
+  });
+  localStorage.setItem("cart-items", JSON.stringify(removedCartItem));
+  displayProducts(removedCartItem);
+  if (removedCartItem.length === 0) {
+    emptyCart();
+  }
+}
