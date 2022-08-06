@@ -1,5 +1,7 @@
 *{
 font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+list-style-type: none;
+
 }
 #v_logo_container{
     /* border: 1px solid black; */
@@ -31,9 +33,7 @@ font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     /* padding: 0% 1% 0% 1%; */
     /* margin-left: 35% */
     }
-    .v_unorderedlist {
-    list-style-type: none;
- }
+
 #v_btn > button{
     border: none;
     background-color: white;
@@ -73,11 +73,12 @@ color: black;
 }
 #v_top_companies{
     /* border: 1px solid salmon; */
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
     height: auto;
     width: auto;
     width: 90%;
-    margin-left: 120px;
+    margin-left: 90px;
     display: none;
 }
 #v_top_companies > div{
@@ -85,6 +86,13 @@ color: black;
  margin: 5px;
  margin-bottom: 10px;
  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+#v_top_companies  div > button{
+    color: blue; 
+    border-radius: 50%;
+    font-size: 35px;
+    border: 0.5px solid blue;
+    margin-top: 10px;
 }
 #v_viewall > a{
 /* text-align: center; */
@@ -110,7 +118,7 @@ margin-left: 50%;
     height: auto;
     width: 100%;
     margin-top: 50px;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
 #v_footer > div{
@@ -132,6 +140,16 @@ margin-left: 50%;
 #bottom > div{
     font-size: 13px;
     padding: 10px 20px 10px 20px;
-    color: solid #cfd3da;
+    color: solid #fafaff;
+    font-weight: lighter;
 
+}
+.v_unorderedlist>li{
+    margin-top: 12px;
+}
+#v_contactus > li>a{
+    margin-left: -13px;
+}
+#v_contactus > li > img{
+    padding-left: 12px;
 }

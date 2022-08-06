@@ -9,17 +9,35 @@
 }
 .v_buyinghead{
 color: white;
-background-color:#78a5f4;
+background-image: linear-gradient(#56a8d1, #398bb3);
 height: 120px;
+width: 100%;
 }
-/* .v_buyinghead > button{
+.v_buyinghead h3~p{
+margin-left: 12px ;
+padding: auto;
+}
+#v_buyhead h3{
+    margin: 5% 5% 5% 5%;
+}
+.v_paymentmethod > div button{
     border: none;
-    color: white;
-    margin-left: 90%;
-} */
+    color: blue;
+    border-radius: 50%;
+    font-size: larger;
+}
+.v_paymentmethod > div button a{
+    color: blue;
+   text-decoration: none;
+
+}
+#v_cardmethod{
+    border-bottom: 0.5px solid black;
+    height: fit-content;
+}
 .v_buyingfooter{
     color: white;
-background-color:#78a5f4;
+    background-image: linear-gradient(#56a8d1, #398bb3);
 border: 1px solid salmon;
 text-align: center;
 margin-top: 20px;
@@ -29,10 +47,11 @@ margin-top: 20px;
     justify-content: left;
     gap: 10px;
     align-items: baseline;
-    /* border: 0.5px solid black; */
-    /* border-bottom: none; */
-    
-    /* background-color: lightblue; */
+    margin-left: 2px;
+}
+.v_userdetails img{
+    padding: 10px 5px;
+    margin-top: auto;
 }
 .v_paymentmethod{
     display: flex;
@@ -42,14 +61,25 @@ margin-top: 20px;
     width: 90%;
     margin: auto;
     align-items: baseline;
-    gap: 10px;
+    justify-content: space-around;
 }
 
 .v_paybtn{
-    color: blue;
+    /* color: rgb(56,147,193); */
     font-size: 20px;
     border-radius: 50%;
     border: none;
     margin-left: 70px;
     margin-top: 20px;
 }
+.v_razorpay img{
+    padding: 10px 5px;
+    margin-top: auto;
+}
+.v_razorpay{
+    background-color: #eef9fe;
+    /* border: 1px solid saddlebrown; */
+    align-items: center;
+}
+
+
