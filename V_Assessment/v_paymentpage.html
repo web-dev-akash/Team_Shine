@@ -1,0 +1,67 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="v_paymentpage.css">
+</head>
+<body>
+    <button id="v_signup">Proceed To Buy</button>
+    
+    <div id="v_buyingcontainer" class="v_popup">
+    <div>
+        <div class="v_buyinghead" id="v_buyhead">
+            <h3>HT Media</h3>
+            <p class="v_closebtn">&times</p>
+            <p>Order Description</p>
+            <p>₹ 15000 + Fee</p>
+
+        </div>
+        <div class="v_razorpay">
+            <img src="https://cdn.razorpay.com/static/assets/trustedbadge/rtb-live.svg" alt="Razorpay" height="25px" width="25px">
+            <p>Razorpay Trusted Buisness</p>
+        </div>
+        <div class="v_userdetails">
+            <img src="https://www.microsoftaccountguard.com/nonprofits/assets/img/03_sign-up_icon.png" alt="mobicon" height="20px" >
+            <p>john@mail.com</p>
+        </div>
+        <p style="text-align: center;">PREFERRED PAYMENT METHODS</p>
+        <div class="v_paymentmethod">
+           <img src="https://cdn.razorpay.com/app/googlepay.svg" alt="gpay" height="20px">
+            <p>UPI - Google Pay</p>
+            <div>
+            <button>></button> 
+            </div>
+        </div>
+        <div class="v_paymentmethod">
+            <img src="https://cdn.razorpay.com/app/paytm.svg" alt="paytm" height="20px">
+            <p>UPI - PayTM</p>
+            <div>
+                <button>></button>
+            </div>
+        </div>
+        <div class="v_paymentmethod " id="v_cardmethod">
+            <img src="https://pemc.coop/wp-content/uploads/2018/04/credit-card-blue-icon-3.png" alt="card" height="20px">
+            <h4>Card:-</h4>
+            <p>Visa , MasterCard , RuPay  More</p>
+            <div>
+                <button><a href="v_cardpay.html"> > </a></button>
+            </div>
+        </div>
+
+        <div class="v_buyingfooter">
+            <p>PAY</p>
+        </div>
+    </div>
+</div>
+</body>
+</html>
+<script>
+     document.querySelector("#v_signup").addEventListener("click",function(){
+    document.querySelector(".v_popup").classList.add("active"); }); 
+
+    document.querySelector(".v_popup .v_closebtn").addEventListener("click",function(){ 
+    document.querySelector(".v_popup").classList.remove("active"); });
+                     
+</script>

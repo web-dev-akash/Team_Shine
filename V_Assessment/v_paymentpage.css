@@ -1,0 +1,143 @@
+#v_buyingcontainer{
+    text-align: left;
+    /* border: 1px solid black; */
+    /* border-radius: 30px; */
+    width: 25%;
+    margin-left: 40%;
+    margin-top: 5%;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    box-sizing: border-box;
+}
+.v_buyinghead{
+color: white;
+background-image: linear-gradient(#56a8d1, #398bb3);
+height: 130px;
+width: 100%;
+margin-top: -38px;
+padding-top: 0;
+border-radius: 5px 5px 0px 0px;
+}
+.v_buyinghead h3~p{
+/* margin-left: 12px ; */
+/* margin: 2; */
+margin: 10px 0px 0px 12px;
+/* border: 1px solid saddlebrown; */
+
+}
+#v_buyhead > h3{
+    padding: 20px 0px 0px 12px;
+    /* color: #eef944; */
+}
+.v_paymentmethod > div button{
+    border: none;
+    color: blue;
+    border-radius: 50%;
+    font-size: lar;
+}
+.v_paymentmethod > div button:nth-child(2){
+    color: #8652ff;
+}
+.v_paymentmethod > div > button a{
+    color: blue;
+   text-decoration: none;
+   padding: 0px 0px 0px 0px;
+}
+#v_cardmethod{
+    border-bottom: 0.5px solid black;
+    height: fit-content;
+}
+#v_cardmethod > p{
+padding: 2px 10px 2px 10px;
+/* color: salmon; */
+}
+#v_cardmethod >div{
+    /* border: 1px dashed red; */
+    margin-right: 20px;
+}
+.v_buyingfooter{
+    color: white;
+    background-image: linear-gradient(#56a8d1, #398bb3);
+/* border: 1px solid salmon; */
+text-align: center;
+margin-top: 20px;
+border-radius: 0px 0px 5px 5px;
+padding: 5px 0px;
+}
+.v_razorpay,.v_userdetails{
+    display: flex;
+    justify-content: left;
+    gap: 10px;
+    align-items: baseline;
+    margin-left: 2px;
+}
+.v_userdetails img{
+    padding: 10px 5px;
+    margin-top: auto;
+}
+.v_paymentmethod{
+    display: flex;
+    border: 0.2px solid black;
+    border-bottom: none;
+    height: 50px;
+    width: 90%;
+    margin: auto;
+    align-items: baseline;
+    justify-content: space-around;
+}
+
+.v_paybtn{
+    /* color: rgb(56,147,193); */
+    font-size: 20px;
+    border-radius: 50%;
+    border: none;
+    margin-left: 70px;
+    margin-top: 20px;
+}
+
+.v_razorpay img{
+    padding: 10px 5px;
+    margin-top: auto;
+}
+.v_razorpay{
+    background-color: #eef9fe;
+    align-items: center;
+}
+#v_signup{
+    
+    padding:10px 20px; 
+    font-size:15px; 
+    font-weight:600; 
+    color:white;
+    background-color: #8652ff;
+    border:none;
+    border-radius: 5px;
+    cursor:pointer; 
+}
+.v_popup{
+    position:absolute; 
+    opacity: 0;
+    width: 60%;
+    left:20px;
+    top: 4%;
+    margin-top: 50px;
+    padding-top: 20px;
+    box-shadow: 0 0 10px 0 rgb(0 0 0 / 15%);
+    border-radius:10px; 
+ }
+ .v_popup.active
+{
+   opacity:1; 
+}
+.v_closebtn{
+    position :absolute;
+    top:-5px;
+    right:5px; 
+    width:17px;
+    height:17px; 
+    color:white; 
+    /* line-height:25px;  */
+    font-size: 25px;
+    cursor:pointer;
+    font-weight: 700;
+    
+}

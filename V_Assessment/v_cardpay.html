@@ -1,0 +1,63 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="v_cardpay.css">
+</head>
+<body>
+  
+  <div class="row">
+    <div class="col-75">
+      <div class="container">
+        <form action="/action_page.php">
+  
+          <div class="row">
+            <div class="col-50">
+              <h3>Billing Address</h3>
+              <label for="fname"><i class="v-user"></i> Full Name</label>
+              <input type="text" id="fname" name="firstname" placeholder="John M. Doe">
+              <label for="email"><i class="v-envelope"></i> Email</label>
+              <input type="text" id="email" name="email" placeholder="john@example.com">
+
+            </div>
+  
+            <div class="col-50">
+              <h3>Payment</h3>
+              <label for="fname">Accepted Cards</label>
+              <div class="v_icon-container">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/Visa.svg/300px-Visa.svg.png" alt="visa" height="40px" width="40px">
+                <img src="https://www.eyeofriyadh.com/news_images/2021/12/158d80e884e39.jpg" alt="mastercard" height="40px" width="40px">
+                <img src="https://w7.pngwing.com/pngs/58/14/png-transparent-amex-card-credit-logo-logos-logos-and-brands-icon-thumbnail.png" alt="americanexpress" height="40px" width="40px">
+              </div>
+              <label for="cname">Name on Card</label>
+              <input type="text" id="cname" name="cardname" placeholder="John More Doe">
+              <label for="ccnum">Credit card number</label>
+              <input type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444">
+              <label for="expmonth">Exp Month</label>
+              <input type="text" id="expmonth" name="expmonth" placeholder="September">
+  
+              <div class="row">
+                <div class="col-50">
+                  <label for="expyear">Exp Year</label>
+                  <input type="text" id="expyear" name="expyear" placeholder="2018">
+                </div>
+                <div class="col-50">
+                  <label for="cvv">CVV</label>
+                  <input type="password" maxlength="3" id="cvv" name="cvv" placeholder="352">
+                </div>
+              </div>
+            </div>
+  
+          </div>
+          <label>
+            <input type="checkbox" checked="checked" name="sameadr"> Shipping address same as billing
+          </label>
+            <input type="submit"  value="Continue to checkout" class="btn" href="v_otppage.html" >    
+        </form>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
