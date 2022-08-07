@@ -1,0 +1,307 @@
+        
+       *{
+        box-sizing: border-box;
+        font-family: sans-serif;
+
+       }
+     
+     #container{
+         width: 100%;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+     
+     
+     }
+     
+     #sub_container{
+         box-shadow: 0 0 10px 0 rgb(0 0 0 / 15%);
+         width: 70%;
+         margin: auto;
+         height: 750px;
+         margin-top: 5%;
+         margin-bottom: 5%;
+     }
+
+     .login {
+       width: 70%;
+      
+       margin-left: 20px;
+       
+     }
+
+     h1{
+         text-align: center;
+         font-size: 25px;
+         margin-bottom: 30px;
+     }
+
+     #upldbtn{
+         display: flex;
+         justify-content: space-between;
+         margin-left: 25%;
+         width: 50%;
+         cursor: pointer;
+         height: 45px;
+         font-family: sans-serif;
+         border: 1px solid #8652ff;
+         border-radius: 5px;
+         font-size: 15px;
+         align-items: center;
+         background-color: white;
+     }
+
+     #upldbtn i{
+         font-size: 25px;
+         color: #8652ff;
+         margin-left: 70px;
+
+     }
+
+     #upldbtn span{
+         font-weight: 700;
+         padding-right: 20px;
+         color: #8652ff;
+     }
+
+     p{
+         font-size: 12px;
+         text-align: center;
+         color: #505e6b;
+     }
+
+     h5{
+         font-size: 12px;
+         text-align: center;
+         color: #374149; 
+         margin-bottom: 30px;
+     }
+     
+
+     .login form{
+       margin: auto;
+       width: 100%;
+      
+       display: grid;
+       grid-template-columns: repeat(2,1fr);
+
+     }
+
+     .formname{
+      
+       margin-bottom: 35px;
+       position: relative;
+      
+     }
+
+
+     .formname input[type="text"],
+     .formname input[type="number"],
+     .formname input[type="email"],
+     .formname input[type="password"]
+     {
+         width: 97%;
+         margin: auto;
+         padding: 10px;
+         font-size: 15px;
+         box-sizing: border-box;
+         border: .5px solid grey;
+         border-radius: 5px;
+     }
+     
+     label{
+         position: absolute;
+         left: 9px;
+         top: 9px;
+         cursor: text;
+         transition: 0.2s;
+         background-color: white;
+     }
+     
+     input:focus~label,
+     input:valid~label
+     {
+         top: -8px;
+         font-size: 14px;
+        color:rgb(4, 4, 158);
+        font-weight: 400;
+        
+      
+         
+     }
+     
+     
+     .login form input[type="submit"] {
+               position: relative;
+               top:70%;
+               left: -50%;
+               font-weight: 700;
+               font-size: 14px;
+               background:#8652ff;
+               border: 0;
+               width: 50%;
+               margin: auto;
+               height: 40px;
+               border-radius: 3px;
+               color: white;
+               cursor: pointer;
+               transition: background 0.3s ease-in-out;
+             }
+     
+             #login form input[type="submit"]:hover {
+               background: #966df5;
+             }
+     
+             
+             
+             
+             
+             .bottompart{
+                 margin-top: 10%;
+                display: grid;
+                grid-template-columns: repeat(1,1fr);
+              
+             }
+             
+             .bottompart button{
+                 padding: 5px 40px;
+                 padding-bottom: 7px;
+                 font-size: 14px;
+                 font-weight: 700;
+                 text-align: center;
+                 font-family: sans-serif;
+                 text-decoration-color: black;
+                 border: 1.5px solid  #8652ff;
+                 cursor: pointer;  
+             
+             }
+             
+             .bottompart button i{
+                 margin-right:20px;
+                 font-size: 20px;
+                 color: #8652ff;;
+             }
+             
+             .bottompart button span{
+                 font-size: 12px;
+                 font-family: sans-serif;
+                 font-weight: 200;
+             
+             
+             
+             }
+             
+             #resume{
+                 position: relative;
+                left: 45%;
+             }
+             
+             
+             .bottompart p{
+                 position: relative;
+                 left: 45%;
+             }
+             
+             #radio{
+                 width: 90%;
+                
+                
+             
+                 
+             }
+             
+             #radio span{
+                 color: #8652ff;
+             }
+             
+a{
+    text-decoration: none;
+}
+             
+
+
+
+#signuplogo {
+ position: relative;
+ left: 37%;
+ top:-100px;
+ display: grid;
+ grid-template-rows:(3,1fr) ;
+ gap: 15px;
+ width: 18%;
+ place-items: center;
+ margin: auto;
+ margin-top: -30%;
+}
+
+#googlelogo{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  width: 100%;
+  height: 50px;
+  box-shadow: 0 0 10px 0 rgb(0 0 0 / 15%);
+  padding-right: 25px;
+  cursor: pointer;
+}
+
+#Linkdlogo{
+ display: grid;
+ grid-template-columns: repeat(2,1fr);
+ width: 100%;
+ box-shadow: 0 0 10px 0 rgb(0 0 0 / 15%);
+ height: 50px;
+ padding-right: 25px;
+ cursor: pointer;
+ 
+}
+
+#fblogo{
+ display: grid;
+ grid-template-columns: repeat(2,1fr);
+ width: 100%;
+ box-shadow: 0 0 10px 0 rgb(0 0 0 / 15%);
+ height: 50px;
+ padding-right: 25px;
+ cursor: pointer;
+}
+
+
+#googlelogo img{
+ width: 25%;
+ margin-top: 12px;
+ margin-left: 10px;
+}
+#Linkdlogo img{
+ width: 25%;
+ margin-top: 17px;
+ margin-left: 10px;
+}
+
+#fblogo img{
+ width: 27%;
+ margin-top: 13px;
+ margin-left: 10px;
+}
+
+
+#googlelogo h4{
+ margin-right: 15px;
+ margin-top: 15px;
+ font-size: 14px;
+ color:#5c5b5b ;
+}
+#Linkdlogo h4{
+ margin-right: 10px;
+ margin-top: 15px;
+ font-size: 14px;
+ color:#5c5b5b ;
+}
+
+#fblogo h4{
+ margin-right: 10px;
+ margin-top: 15px;
+ font-size: 14px;
+ color:#5c5b5b ;
+}
+             
+             

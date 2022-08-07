@@ -1,10 +1,16 @@
+
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: sans-serif;
 }
 
-.mid{
+a{
+    text-decoration: none;
+}
+.sgnup{
     position:absolute; 
     top:0%; 
     left:94%; 
@@ -60,76 +66,85 @@
     
 }
 
-
 .main{
-    display: grid;
-    grid-template-columns:repeat(2,1fr);
-    height: 400px;
-    width: 90%;
+    display: flex;
+    margin-bottom: 10px; 
+    margin-top: 10px;
+    
+
+}
+
+.login{
+    width: 50%;
+
+}
+h1{
+    margin-left: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.login form{
     margin: auto;
-} 
-
-
-
-.left{
-    width: 100%;
-}
-
-
-.left h2{
-
-    color:#222; 
-    margin: 25px 0px;
-    font-size:30px;
-    font-family: sans-serif;
-}
-
-.form{
+    width: 90%;
+   
+  }
+  .formname{
+      
+    margin-bottom: 20px;
     position: relative;
-    margin: 15px 0px;
+   
+  }
+
+
+  .formname input[type="email"],
+  .formname input[type="password"]
+  {
+      width: 90%;
+      margin: auto;
+      padding: 12px;
+      font-size: 15px;
+      box-sizing: border-box;
+      border-radius: 5px;
+      border: 1px solid gray;
+     
+  }
+
+  .formname input[type="email"]:hover,
+  .formname input[type="password"]:hover{
+    border: 1px solid #8652ff ;
+
+  }
+
+
+  label{
+    position: absolute;
+    left: 12px;
+    top: 11px;
+    transition: 0.2s;
+    background-color:white;
 }
 
-.label{
-    position: absolute;
-    top: 0.8rem;
-    left: 1.4rem;
-    cursor: text;
-    font-family: sans-serif;
-    color:#47535e;
-    transition: top 200ms ease-in,left 200ms ease-in, font-size 200ms ease-in;
+input:focus~label,
+input:valid~label
+{
+    top: -8px;
+    font-size: 14px;
+   font-weight: 400;
+ 
     
 }
 
-.textbox:focus ~.label,.textbox:not(:placeholder-shown) .textbox:not(:focus)~.label{
-    top:-0.1rem;
-    left:0.5rem;
-    font-size: 12px;
-    background: white;
 
+#signedin{
+    margin-top: 8px;
+    margin-left: 10px;
+    font-size: 14px;
+    font-family: sans-serif;
+   
 }
 
-
-
-.form input[type="text"],
-.form input[type="password"]{
-
- margin-top: 5px;
- padding: 10px;
- width: 80%;
- border: 1px solid #232434;
- border-radius: 5px;
-
-
-}
-
-.form input[type="text"]:focus,
-.form input[type="password"]:focus{
-
-    border:1 px solid #8652ff;
-}
-
-
-.form button{
+.formname button{
     width: 69%;
     padding: 10px;
     border-radius: 5px;
@@ -138,27 +153,32 @@
 
 }
 
-.form button:focus{
-    border:1 px solid #8652ff;
+.formname button:hover{
+    color:  #8652ff;
 }
 
-
-
-#loginbtn{
+#login_btn{
     background-color: #8652ff;
     color:white;
     font-weight: 550;
     font-family: sans-serif;
-    font-size: 13px;
+    font-size: 15px;
+    padding: 10px 32%;
+    border-radius: 5px;
+    border: none;
+    margin-bottom: 13px;
+    cursor: pointer;
+   
 }
 
-.form h4{
+.formname h4{
 
     font-weight: 400;
     font-family: sans-serif;
     font-size: 20px;
     text-align: center;
-    margin-right: 30%;
+    margin-right: 25%;
+    margin-top: 5px;
 }
 
 #otpbtn{
@@ -168,34 +188,23 @@
     font-size: 15px;
     background-color: white;
     border: 1px solid #8652ff;;
+    margin-left: 20px;
     
 }
 
-#signedin{
-    font-size: 14px;
-    font-family: sans-serif;
-   
+.login2{
+
+    width: 45%;
 }
 
-#signedin span{
-    text-decoration: underline;
-    margin-left: 12%;
-    color: #8652ff;
-    cursor: pointer;
-}
 
-.right{
-    height: 400px;
-    width: 90%;
-    
-}
 
 #signuplogo{
    width: 80%;
    display: grid;
    grid-template-columns: repeat(1,1fr);
    margin: auto;
-   margin-top: 25%;
+   margin-top: 20%;
    gap: 20px;
 
 }
