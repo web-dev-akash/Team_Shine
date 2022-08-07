@@ -1,0 +1,411 @@
+.header-promo {
+  display: flex;
+  justify-content: flex-end;
+  gap: 30px;
+  padding-right: 135px;
+  background: #f2f3f8;
+  color: #505e6b;
+  font-size: 15px;
+  height: 41px;
+}
+.header-promo-list {
+  width: 285px;
+  /* height: 150px; */
+  z-index: 1;
+  display: none;
+  position: absolute;
+  right: 340px;
+  top: 42px;
+  cursor: pointer;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+  padding: 10px 20px;
+  color: rgb(81, 81, 81);
+}
+.header-promo-list h2 {
+  margin: 5px 0;
+  padding: 0;
+}
+.header-promo-list p {
+  margin: 5px 0;
+}
+.header-promo-download > div {
+  display: flex;
+  justify-content: center;
+}
+.header-promo-download > div > a:first-child {
+  margin: 5px 0 -5px -8px;
+}
+.header-promo-download > div > a:last-child {
+  margin: 13px 0 -5px 0;
+}
+.header-promo-call {
+  position: absolute;
+  border-radius: 5px;
+  background-color: white;
+  color: rgb(67, 67, 67);
+  right: 125px;
+  top: 42px;
+  margin-bottom: 60px;
+  z-index: 1;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+  padding: 0px 20px;
+  display: none;
+  cursor: pointer;
+}
+.header-promo h4 {
+  /* padding: 10px 0; */
+  padding: 10px 0;
+  margin: 0 -5px;
+  box-sizing: border-box;
+  /* border: 1px solid; */
+  font-size: 13px;
+}
+.header-promo h4:hover {
+  border-bottom: 2px solid #8652ff;
+}
+.header-promo > h4 > a {
+  text-decoration: none;
+  color: #505e6b;
+}
+.header-promo-download-hover:hover .header-promo-list {
+  display: block;
+}
+.header-promo-list:hover {
+  display: block;
+}
+.header-promo-help-hover:hover .header-promo-call {
+  display: block;
+}
+.material-symbols-outlined {
+  position: relative;
+  margin-top: -10px;
+  top: 5px;
+  padding-right: 5px;
+}
+.sticky_navbar {
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  width: 100%;
+  background: white;
+}
+.inputbox-search {
+  padding: 5px 0 0 5px;
+}
+.header-login-section {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 130px 5px 115px;
+  /* margin-top: -2px;
+  margin-left: -2px; */
+  height: 60px;
+}
+.header-login-section-two {
+  display: flex;
+  gap: 25px;
+  align-items: center;
+  font-size: small;
+}
+.header-login-section-two span {
+  color: #8080a5;
+  padding: 5px;
+}
+.header-login-section-two span:hover {
+  border-bottom: 2px solid #8652ff;
+}
+
+#header-login-input {
+  display: flex;
+  /* gap: 20px; */
+}
+#header-login-input img {
+  position: relative;
+  top: -17px;
+  left: 2px;
+  width: 50%;
+  padding: 0;
+  /* margin-rsight: 30px; */
+  margin: 0;
+}
+#header-login-input input {
+  position: relative;
+  left: -60px;
+  margin-top: 3px;
+  height: 40px;
+  padding-right: 260px;
+  border: none;
+  padding-left: 10px;
+  border-radius: 5px 0 0 5px;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+#header-login-input input:focus {
+  outline: none;
+  border: 1px solid #8652ff;
+}
+#header-login-input button {
+  position: relative;
+  left: -60px;
+  margin-top: 3px;
+  width: 40px;
+  height: 40px;
+  border-radius: 0 5px 5px 0;
+  border: none;
+  color: white;
+  background: #8652ff;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+.header-login-section > div > a {
+  color: #8080a5;
+  position: relative;
+  top: 15px;
+}
+.header-login-section > div > a:not(:last-child) {
+  margin-right: 20px;
+}
+.navbar {
+  display: flex;
+  justify-content: flex-start;
+  padding-left: 100px;
+  gap: 20px;
+  height: 47px;
+  font-size: small;
+  font-weight: 600;
+  border-top: 1px solid rgb(211, 209, 209);
+  border-bottom: 1px solid rgb(211, 209, 209);
+}
+.nav-links {
+  background-color: #fff;
+  border: 1px solid #ececec;
+  border-radius: 0.5rem;
+  padding: 10px 5px;
+  box-shadow: 0 0 1.5rem 0 rgb(0 0 0 / 10%);
+  position: absolute;
+  top: 34px;
+  display: none;
+  min-width: 210px;
+  z-index: 1;
+  font-weight: 500;
+}
+.navbar > a:hover,
+.navbar > div > a:hover {
+  border-bottom: 2px solid #8652ff;
+}
+.navbar > div {
+  position: relative;
+  top: 12px;
+}
+
+.navbar > div > a,
+.navbar > a {
+  /* border: 1px solid; */
+  padding: 14px 10px;
+  position: relative;
+}
+.nav-links > a:hover {
+  margin-left: -2px;
+  color: #8652ff;
+  border-left: 2px solid #8652ff;
+}
+.nav-links-jobs {
+  left: -8px;
+}
+.nav-links-job-seeking {
+  left: -3px;
+}
+.nav-links-course {
+  left: -5px;
+}
+.header-slider {
+  width: 100%;
+  overflow: hidden;
+  margin-bottom: 50px;
+}
+.header-notifications {
+  position: absolute;
+  z-index: 1;
+  right: 50px;
+  background: white;
+  color: rgb(44, 44, 44);
+  border-radius: 5px;
+  height: 350px;
+  width: 400px;
+  top: 90px;
+  right: 240px;
+  box-shadow: 0 0 1.5rem 0 rgb(0 0 0 / 10%);
+  display: none;
+}
+.navbar > div > a {
+  padding: 12px;
+}
+.header-notifications > h3 {
+  padding: 20px 30px;
+}
+.header-notifications > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 70%;
+  margin: auto;
+  text-align: center;
+  color: #505e6b;
+}
+.header-notifications > div > img {
+  width: 60px;
+  padding: 50px 0 20px 0;
+}
+.header-notifications h4 {
+  padding-bottom: 15px;
+}
+.header-notification-login {
+  right: 0;
+  position: absolute;
+  background: white;
+  width: 200px;
+  height: 190px;
+  top: 90px;
+  right: 125px;
+  border-radius: 10px;
+  box-shadow: 0 0 1.5rem 0 rgb(0 0 0 / 10%);
+  text-align: center;
+  display: none;
+  color: #505e6b;
+}
+.header-notification-login > div {
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+.header-notification-login a {
+  text-decoration: none;
+  padding: 12px 50px;
+  background-color: #8652ff;
+  border-radius: 5px;
+  font-weight: 600;
+  color: white;
+}
+#user-login-btn {
+  background-color: white;
+  color: #8652ff;
+  font-size: 15px;
+  padding: 5px 65px;
+  border-top: 1px solid rgb(204, 204, 204);
+  border-radius: 0;
+}
+.header-notification-hover:hover .header-notifications {
+  display: block;
+}
+.header-notification-login-hover:hover .header-notification-login {
+  display: block;
+}
+.nav-links > a {
+  padding: 10px 15px;
+  text-decoration: none;
+  color: black;
+  display: block;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: black;
+}
+.navbar-jobs:hover .nav-links-jobs {
+  display: block;
+}
+.navbar-job-seeking:hover .nav-links-job-seeking {
+  display: block;
+}
+.navbar-course:hover .nav-links-course {
+  display: block;
+}
+
+#v_container {
+  background-image: linear-gradient(to bottom right, #924a71, #a384e4);
+  display: flex;
+  height: 150px;
+  width: 100%;
+  font-family: "Open Sans", Arial;
+  color: white;
+}
+#v_heading {
+  /* text-align: center; */
+  margin-top: 30px;
+  margin-left: 30px;
+}
+.v_bulbimg > img {
+  border-radius: 50%;
+  margin-top: 30px;
+  margin-left: 20px;
+}
+.v_careerguide {
+  /* border: 1px solid black; */
+  display: flex;
+  /* width: 80%; */
+  margin-left: 70px;
+  margin-top: -40px;
+  height: 500px;
+  width: 90%;
+  border-radius: 10px;
+  flex-wrap: wrap;
+  background-color: white;
+  justify-content: left;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+.v_careerguide > div:first-child {
+  flex: 1 0 100%;
+  text-align: left;
+  height: 100px;
+}
+.v_btns {
+  border-radius: 50%;
+  margin-right: 30px;
+  border: none;
+}
+.v_btns:first-child {
+  color: white;
+  background-color: blue;
+}
+.v_careerguide > div {
+  /* border: 1px solid salmon; */
+  margin: auto;
+  height: 150px;
+  width: 200px;
+  margin: 10px;
+  text-align: center;
+  padding: 20px;
+}
+/* .v_child > button{ */
+
+/* } */
+#v_footer {
+  display: flex;
+  background-color: #f3f9fd;
+  margin-top: 70px;
+  justify-content: space-between;
+  height: 70px;
+  padding: 0% 5% 0% 5%;
+}
+#v_footer1 {
+  background-color: #f3f9fd;
+  margin-top: -8px;
+  border-top: 0.2px solid grey;
+  border-bottom: 0.2px solid gray;
+  padding: 0% 5% 0% 5%;
+}
+#v_footer2 {
+  /* padding: 0% 3% 0% 3%; */
+  /* border: 1px solid #924a71; */
+  background-color: #f3f9fd;
+  display: flex;
+  justify-content: space-evenly;
+}
+#v_footer2 > div {
+  /* border: 1px solid #a384e4; */
+  padding: 10px 20px 10px 20px;
+}

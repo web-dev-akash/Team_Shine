@@ -174,13 +174,9 @@ function stickyNavbar() {
     navbar.classList.remove("sticky_navbar");
   }
 }
-
 // Sticky Navbar End---------------------
 
 // Adding to cart and storing it to localStorage-----------
-// var cartArr = [];
-
-// var cartData = JSON.parse(localStorage.getItem("cart-items")) || [];
 
 function emptyCart() {
   var div = document.createElement("div");
@@ -252,19 +248,8 @@ function displayProducts(datacart) {
     deleteBtn.addEventListener("click", function () {
       removeItem(index);
     });
-    //function call for remove the item from cart------------------------------
-
-    // }
   });
 }
-
-//function call for remove the item from cart------------------------------
-// for (let i = 0; i < itemsInCart.length; i++) {
-//   itemsInCart[i].addEventListener("click", function () {
-//     removeItem(i);
-//     // console.log("remove" + i);
-//   });
-// }
 
 var cart = document.querySelectorAll("#corseexpert");
 for (let i = 0; i < cart.length; i++) {
