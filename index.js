@@ -298,3 +298,93 @@ function removeItem(index) {
     emptyCart();
   }
 }
+
+// ------------------Filter By category-------------------
+
+function handlecategory() {
+  var category = document.getElementById("filtercategory").value;
+  var filteredlist = courseData.filter(function (elem) {
+    return elem.category == category;
+  });
+  if (category !== "") {
+    document.getElementById("viewAll-data").style.display = "none";
+  } else {
+    document.getElementById("viewAll-data").style.display = "block";
+  }
+  displayFiltereData(filteredlist);
+}
+
+function displayFiltereData(data) {
+  document.getElementById("filtered-Data").innerText = "";
+  data.map(function (elem, index) {
+    // var popularDiv = document.createElement("div");
+    // popularDiv.setAttribute("id", "PopularCourse");
+    var mainDiv = document.createElement("div");
+    mainDiv.setAttribute("class", "coursechild");
+    var spanCourse = document.createElement("span");
+    spanCourse.innerText = "Course";
+    var br = document.createElement("br");
+    var javaDiv = document.createElement("div");
+    javaDiv.setAttribute("class", "Java");
+    var image = document.createElement("img");
+    image.setAttribute("id", "Dev");
+    image.setAttribute("class", "Dev");
+    image.setAttribute("src", elem.image);
+    var rating = document.createElement("p");
+    rating.innerText = "4.5";
+    javaDiv.append(image, rating);
+    var javaContent = document.createElement("div");
+    javaContent.setAttribute("class", "javacontent");
+    var nameh2 = document.createElement("h2");
+    nameh2.setAttribute("id", "course-name");
+    nameh2.innerText = elem.name;
+    var contentpara1 = document.createElement("p");
+    contentpara1.innerText = "TestPrepTraining";
+    var contentpara2 = document.createElement("p");
+    contentpara2.innerText = "Duration: 51 Hours | Mode: Online";
+    var h3 = document.createElement("h3");
+    h3.setAttribute("id", "course-price");
+    h3.innerText = "₹ " + elem.price;
+    javaContent.append(nameh2, contentpara1, contentpara2, h3);
+    var courseBtn = document.createElement("div");
+    courseBtn.setAttribute("class", "coursebutton");
+    var expBtn = document.createElement("button");
+    expBtn.setAttribute("class", "coursexplore");
+    expBtn.innerText = "Explore";
+    var anchor = document.createElement("a");
+    anchor.setAttribute("id", "corseexpert");
+    anchor.setAttribute("href", "cart.html");
+    var buyBtn = document.createElement("button");
+    buyBtn.setAttribute("class", "corseexpert");
+    buyBtn.innerText = "Buy Now";
+    buyBtn.addEventListener("click", function () {
+      addToCart(index);
+    });
+    anchor.append(buyBtn);
+    courseBtn.append(expBtn, anchor);
+    mainDiv.append(spanCourse, br, javaDiv, javaContent, courseBtn);
+    // popularDiv.append(mainDiv);
+    document.getElementById("filtered-Data").append(mainDiv);
+  });
+}
+
+// -----------------sort by price -------------------
+
+function handleprice() {
+  var filteredPrice = document.getElementById("sortprice").value;
+  if (filteredPrice == "High") {
+    courseData.sort(function (a, b) {
+      return b.price - a.price;
+    });
+  } else {
+    courseData.sort(function (a, b) {
+      return a.price - b.price;
+    });
+  }
+  if (filteredPrice !== "") {
+    document.getElementById("viewAll-data").style.display = "none";
+  } else {
+    document.getElementById("viewAll-data").style.display = "block";
+  }
+  displayFiltereData(courseData);
+}
