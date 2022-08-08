@@ -193,6 +193,8 @@ function emptyCart() {
   var exploreBtn = document.createElement("a");
   exploreBtn.innerText = "Explore Now";
   exploreBtn.setAttribute("class", "cart-explore-now");
+  exploreBtn.href = "viewall.html";
+  exploreBtn.style.textDecoration = "none";
   div.append(image, h4, para, exploreBtn);
   document.getElementById("cart-data").append(div);
 
@@ -248,6 +250,8 @@ function displayProducts(datacart) {
     deleteBtn.addEventListener("click", function () {
       removeItem(index);
     });
+    document.getElementById("order-price-total").innerText =
+      "₹ " + totalPayble + " + Fees";
   });
 }
 
@@ -388,3 +392,39 @@ function handleprice() {
   }
   displayFiltereData(courseData);
 }
+
+// ------------------------signup page------------------------
+
+// ---------------------------Login Part-----------------------------
+
+// Login part
+
+document.querySelector("#signup").addEventListener("click", function () {
+  document.querySelector(".popup").classList.add("active");
+});
+document
+  .querySelector(".popup .closebtn")
+  .addEventListener("click", function () {
+    document.querySelector(".popup").classList.remove("active");
+  });
+
+document.querySelector("#signup").addEventListener("click", function () {
+  document.querySelector(".header-slider").classList.add("blur");
+  document.querySelector("#navbar-container").classList.add("blur");
+  document.querySelector(".header-promo").classList.add("blur");
+});
+document
+  .querySelector(".popup .closebtn")
+  .addEventListener("click", function () {
+    document.querySelector(".header-slider").classList.remove("blur");
+    document.querySelector(".header-promo").classList.remove("blur");
+    document.querySelector("#navbar-container").classList.remove("blur");
+  });
+
+// ---------------proceed to buy----------------------------
+
+var usermail = document.getElementById("order-mail-user").innerText;
+
+var usrid = localStorage.getItem("Email").value;
+
+usermail = usrid;
