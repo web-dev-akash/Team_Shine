@@ -128,7 +128,6 @@ body {
 .header-login-section-two span:hover {
   border-bottom: 2px solid #8652ff;
 }
-
 #header-login-input {
   display: flex;
   /* gap: 20px; */
