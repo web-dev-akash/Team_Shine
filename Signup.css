@@ -387,5 +387,5 @@ a {
 #rgstr_btn {
   position: relative;
   top: 130px;
-  /* right: 0px; */
+  left: -200px;
 }
