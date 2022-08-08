@@ -1,15 +1,139 @@
         
        *{
         box-sizing: border-box;
-        font-family: sans-serif;
+        font-family: "Poppins",sans-serif;
 
        }
+
+      body {
+        margin: 0;
+        padding: 0;
+      }
+      
+      /* -----------------------------------Header Section----------------------------------- */
+      
+      .header-promo {
+        display: flex;
+        justify-content: flex-end;
+        gap: 40px;
+        padding-right: 135px;
+        background: #f2f3f8;
+        color: #505e6b;
+        font-size: 15px;
+        height: 51px;
+      }
+      .header-promo-list {
+        width: 285px;
+        /* height: 150px; */
+        z-index: 1;
+        display: none;
+        position: absolute;
+        right: 340px;
+        top: 52px;
+        cursor: pointer;
+        background-color: white;
+        border-radius: 5px;
+        box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+          rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+        padding: 10px 20px;
+        color: rgb(81, 81, 81);
+      }
+      .header-promo-list h2 {
+        margin: 5px 0;
+        padding: 0;
+      }
+      .header-promo-list p {
+        margin: 5px 0;
+      }
+      .header-promo-download > div {
+        display: flex;
+        justify-content: center;
+      }
+      .header-promo-download > div > a:first-child {
+        margin: 5px 0 -5px -8px;
+      }
+      .header-promo-download > div > a:last-child {
+        margin: 13px 0 -5px 0;
+      }
+      .header-promo-call {
+        position: absolute;
+        border-radius: 5px;
+        background-color: white;
+        color: rgb(67, 67, 67);
+        right: 125px;
+        top: 42px;
+        margin-bottom: 60px;
+        z-index: 1;
+        box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+          rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+        padding: 0px 20px;
+        display: none;
+        cursor: pointer;
+      }
+      .header-promo h4 {
+        /* padding: 10px 0; */
+        padding: 10px 0;
+        margin: 0 -3px;
+        box-sizing: border-box;
+        /* border: 1px solid; */
+        font-size: 13px;
+      }
+      .header-promo h4:hover {
+        border-bottom: 2px solid #8652ff;
+      }
+      .header-promo > h4 > a {
+        text-decoration: none;
+        color: #505e6b;
+      }
+      .header-promo-download-hover:hover .header-promo-list {
+        display: block;
+      }
+      .header-promo-list:hover {
+        display: block;
+      }
+      .header-promo-help-hover:hover .header-promo-call {
+        display: block;
+      }
+
+      .material-symbols-outlined{
+        position: relative;
+        margin-top: -5px;
+        top: 5px;
+        padding-right: 5px;
+      }
+
+
+      #header-login-input{
+       display: flex;
+      box-shadow: 2px 4px 0 rgb(0 0 0 / 20%);
+        margin-bottom: 30px;
+        padding-top: 10px;
+        padding-left: 7px; 
+      }
+      #header-login-input img
+      {   
+        width: 60px;
+       
+        margin-left: 20px;
+       
+      }
+
+
+      .sticky_navbar {
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        width: 100%;
+        background: white;
+      }
+      
      
      #container{
          width: 100%;
          display: flex;
          justify-content: center;
          align-items: center;
+     
      
      
      }
@@ -133,8 +257,8 @@
      
      .login form input[type="submit"] {
                position: relative;
-               top:70%;
-               left: -50%;
+               top:110%;
+               left: -30%;
                font-weight: 700;
                font-size: 14px;
                background:#8652ff;
