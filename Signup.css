@@ -1,0 +1,391 @@
+* {
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* -----------------------------------Header Section----------------------------------- */
+
+.header-promo {
+  display: flex;
+  justify-content: flex-end;
+  gap: 40px;
+  padding-right: 135px;
+  background: #f2f3f8;
+  color: #505e6b;
+  font-size: 15px;
+  height: 51px;
+}
+.header-promo-list {
+  width: 285px;
+  /* height: 150px; */
+  z-index: 1;
+  display: none;
+  position: absolute;
+  right: 340px;
+  top: 52px;
+  cursor: pointer;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+  padding: 10px 20px;
+  color: rgb(81, 81, 81);
+}
+.header-promo-list h2 {
+  margin: 5px 0;
+  padding: 0;
+}
+.header-promo-list p {
+  margin: 5px 0;
+}
+.header-promo-download > div {
+  display: flex;
+  justify-content: center;
+}
+.header-promo-download > div > a:first-child {
+  margin: 5px 0 -5px -8px;
+}
+.header-promo-download > div > a:last-child {
+  margin: 13px 0 -5px 0;
+}
+.header-promo-call {
+  position: absolute;
+  border-radius: 5px;
+  background-color: white;
+  color: rgb(67, 67, 67);
+  right: 125px;
+  top: 42px;
+  margin-bottom: 60px;
+  z-index: 1;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+  padding: 0px 20px;
+  display: none;
+  cursor: pointer;
+}
+.header-promo h4 {
+  /* padding: 10px 0; */
+  padding: 10px 0;
+  margin: 0 -3px;
+  box-sizing: border-box;
+  /* border: 1px solid; */
+  font-size: 13px;
+}
+.header-promo h4:hover {
+  border-bottom: 2px solid #8652ff;
+}
+.header-promo > h4 > a {
+  text-decoration: none;
+  color: #505e6b;
+}
+.header-promo-download-hover:hover .header-promo-list {
+  display: block;
+}
+.header-promo-list:hover {
+  display: block;
+}
+.header-promo-help-hover:hover .header-promo-call {
+  display: block;
+}
+
+.material-symbols-outlined {
+  position: relative;
+  margin-top: -5px;
+  top: 5px;
+  padding-right: 5px;
+}
+
+#header-login-input {
+  display: flex;
+  box-shadow: 2px 4px 0 rgb(0 0 0 / 20%);
+  margin-bottom: 30px;
+  padding-top: 10px;
+  padding-left: 7px;
+}
+#header-login-input img {
+  width: 60px;
+
+  margin-left: 20px;
+}
+
+.sticky_navbar {
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  width: 100%;
+  background: white;
+}
+
+#container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#sub_container {
+  box-shadow: 0 0 10px 0 rgb(0 0 0 / 15%);
+  width: 70%;
+  margin: auto;
+  height: 750px;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+.login {
+  width: 70%;
+
+  margin-left: 20px;
+}
+
+h1 {
+  text-align: center;
+  font-size: 25px;
+  margin-bottom: 30px;
+}
+
+#upldbtn {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 25%;
+  width: 50%;
+  cursor: pointer;
+  height: 45px;
+  font-family: sans-serif;
+  border: 1px solid #8652ff;
+  border-radius: 5px;
+  font-size: 15px;
+  align-items: center;
+  background-color: white;
+}
+
+#upldbtn i {
+  font-size: 25px;
+  color: #8652ff;
+  margin-left: 70px;
+}
+
+#upldbtn span {
+  font-weight: 700;
+  padding-right: 20px;
+  color: #8652ff;
+}
+
+p {
+  font-size: 12px;
+  text-align: center;
+  color: #505e6b;
+}
+
+h5 {
+  font-size: 12px;
+  text-align: center;
+  color: #374149;
+  margin-bottom: 30px;
+}
+
+.login form {
+  margin: auto;
+  width: 100%;
+
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.formname {
+  margin-bottom: 35px;
+  position: relative;
+}
+
+.formname input[type="text"],
+.formname input[type="number"],
+.formname input[type="email"],
+.formname input[type="password"] {
+  width: 97%;
+  margin: auto;
+  padding: 10px;
+  font-size: 15px;
+  box-sizing: border-box;
+  border: 0.5px solid grey;
+  border-radius: 5px;
+}
+
+label {
+  position: absolute;
+  left: 9px;
+  top: 9px;
+  cursor: text;
+  transition: 0.2s;
+  background-color: white;
+}
+
+input:focus ~ label,
+input:valid ~ label {
+  top: -8px;
+  font-size: 14px;
+  color: rgb(4, 4, 158);
+  font-weight: 400;
+}
+
+.login form input[type="submit"] {
+  position: relative;
+  top: 110%;
+  left: -30%;
+  font-weight: 700;
+  font-size: 14px;
+  background: #8652ff;
+  border: 0;
+  width: 50%;
+  margin: auto;
+  height: 40px;
+  border-radius: 3px;
+  color: white;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out;
+}
+
+#login form input[type="submit"]:hover {
+  background: #966df5;
+}
+
+.bottompart {
+  margin-top: 10%;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+}
+
+.bottompart button {
+  padding: 5px 40px;
+  padding-bottom: 7px;
+  font-size: 14px;
+  font-weight: 700;
+  text-align: center;
+  font-family: sans-serif;
+  text-decoration-color: black;
+  border: 1.5px solid #8652ff;
+  cursor: pointer;
+}
+
+.bottompart button i {
+  margin-right: 20px;
+  font-size: 20px;
+  color: #8652ff;
+}
+
+.bottompart button span {
+  font-size: 12px;
+  font-family: sans-serif;
+  font-weight: 200;
+}
+
+#resume {
+  position: relative;
+  left: 45%;
+}
+
+.bottompart p {
+  position: relative;
+  left: 45%;
+}
+
+#radio {
+  width: 90%;
+}
+
+#radio span {
+  color: #8652ff;
+}
+
+a {
+  text-decoration: none;
+}
+
+#signuplogo {
+  position: relative;
+  left: 37%;
+  top: -100px;
+  display: grid;
+  grid-template-rows: (3, 1fr);
+  gap: 15px;
+  width: 18%;
+  place-items: center;
+  margin: auto;
+  margin-top: -30%;
+}
+
+#googlelogo {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  width: 100%;
+  height: 50px;
+  box-shadow: 0 0 10px 0 rgb(0 0 0 / 15%);
+  padding-right: 25px;
+  cursor: pointer;
+}
+
+#Linkdlogo {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  width: 100%;
+  box-shadow: 0 0 10px 0 rgb(0 0 0 / 15%);
+  height: 50px;
+  padding-right: 25px;
+  cursor: pointer;
+}
+
+#fblogo {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  width: 100%;
+  box-shadow: 0 0 10px 0 rgb(0 0 0 / 15%);
+  height: 50px;
+  padding-right: 25px;
+  cursor: pointer;
+}
+
+#googlelogo img {
+  width: 25%;
+  margin-top: 12px;
+  margin-left: 10px;
+}
+#Linkdlogo img {
+  width: 25%;
+  margin-top: 17px;
+  margin-left: 10px;
+}
+
+#fblogo img {
+  width: 27%;
+  margin-top: 13px;
+  margin-left: 10px;
+}
+
+#googlelogo h4 {
+  margin-right: 15px;
+  margin-top: 15px;
+  font-size: 14px;
+  color: #5c5b5b;
+}
+#Linkdlogo h4 {
+  margin-right: 10px;
+  margin-top: 15px;
+  font-size: 14px;
+  color: #5c5b5b;
+}
+
+#fblogo h4 {
+  margin-right: 10px;
+  margin-top: 15px;
+  font-size: 14px;
+  color: #5c5b5b;
+}
+#rgstr_btn {
+  position: relative;
+  top: 130px;
+  left: -200px;
+}

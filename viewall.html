@@ -1,0 +1,986 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="viewall.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <!-- Header Promotion to download the Application or Call -->
+      <div class="header-promo">
+        <div class="header-promo-download-hover">
+          <h4>
+            <span class="material-symbols-outlined">smartphone</span>Download
+            App
+          </h4>
+          <div class="header-promo-list">
+            <div class="header-promo-download">
+              <h2>Download Shine App</h2>
+              <p>Get The Best Experience Of Shine At Your Fingertips</p>
+              <div>
+                <a
+                  href="https://play.google.com/store/apps/details?id=com.net.shine&referrer=utm_source%3Ddesktop%26utm_medium%3Dorganic"
+                  ><img
+                    width="140px"
+                    src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png"
+                    alt="google-play-logo"
+                /></a>
+                <a
+                  href="https://itunes.apple.com/in/app/shine.com-job-search/id950558510?ls=1&mt=8&utm_source=Shinewebpage&utm_medium=banner&utm_campaign=ios_app"
+                  ><img
+                    width="120px"
+                    height="37px"
+                    src="https://developer.apple.com/news/images/download-on-the-app-store-badge.png"
+                    alt="app-store-logo"
+                /></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <h4>
+          <a href="#"
+            ><span class="material-symbols-outlined">person</span>For
+            Employers</a
+          >
+        </h4>
+        <div class="header-promo-help-hover">
+          <h4><span class="material-symbols-outlined">call</span>Help</h4>
+          <div class="header-promo-call">
+            <h2>080-10062222</h2>
+            <p>9am - 6pm, Mon To Sat</p>
+          </div>
+        </div>
+      </div>
+
+      <!-------------Logo, Search Box and Login part ------------->
+
+      <div id="navbar-container">
+        <div class="header-login-section">
+          <div id="header-login-input">
+            <a href="#"
+              ><img
+                src="https://www.shine.com/next/static/images/shine-logo.png"
+                alt="logo"
+            /></a>
+            <input type="text" placeholder="Job Tittle, Skills" />
+            <button>
+              <span class="material-symbols-outlined inputbox-search"
+                >search</span
+              >
+            </button>
+          </div>
+          <div class="header-login-section-two">
+            <div class="header-notification-hover">
+              <a href="#"
+                ><span class="material-symbols-outlined">notifications</span></a
+              >
+              <div class="header-notifications">
+                <h3>Notification</h3>
+                <div>
+                  <img
+                    src="https://www.shine.com/next/static/images/notificationIcon.svg"
+                    alt="notification-bell"
+                  />
+                  <h4>No Notification</h4>
+                  <p>We Will Notify You Once We Have Something For You</p>
+                </div>
+              </div>
+            </div>
+            <div>
+              <a href="cart.html"
+                ><span class="material-symbols-outlined">shopping_cart</span></a
+              >
+            </div>
+            <div class="header-notification-login-hover">
+              <a href="#"
+                ><span class="material-symbols-outlined">person</span></a
+              >
+              <div class="header-notification-login">
+                <h2 id="user-name-login">Hello User!</h2>
+                <p>New To Shine?</p>
+                <div>
+                  <a href="Signup.html" id="user-register-btn">Register</a>
+                </div>
+                <div id="sgnup"><a href="#" id="signup">Login</a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!------------ Navigation Bar with all the links ------------------>
+
+        <div class="navbar">
+          <a href="Index.html">HOME</a>
+          <div class="navbar-jobs">
+            <a href="Index.html">JOBS</a>
+            <div class="nav-links nav-links-jobs">
+              <a href="Jobs_Search.html"> Search </a>
+              <a href="#">Job Alert</a>
+            </div>
+          </div>
+          <div class="navbar-job-seeking">
+            <a href="jobSeeking.html">JOBS SEEKING ASSISTANCE</a>
+            <div class="nav-links nav-links-job-seeking">
+              <a href="#">Profile Booster</a>
+              <a href="#">Application Highlighter</a>
+              <a href="#">Resume Writing</a>
+              <a href="#" style="color: #8652ff">View All</a>
+            </div>
+          </div>
+          <div class="navbar-course">
+            <a href="coursepage.html">COURSES</a>
+            <div class="nav-links nav-links-course">
+              <a href="#">Sales And Marketing</a>
+              <a href="#">Information And Technology</a>
+              <a href="#">Operation Management</a>
+              <a href="#">Human Resources</a>
+              <a href="viewall.html" style="color: #8652ff">View All</a>
+            </div>
+          </div>
+          <a href="v_careerguide.html">CAREER GUIDANCE</a>
+          <a href="#">BLOG</a>
+        </div>
+      </div>
+      <br />
+    </header>
+
+    <div id="filter-The-data">
+      <select id="sortprice" onchange="handleprice()">
+        <option value="">Sort by Price</option>
+        <option value="High">High</option>
+        <option value="Low">Low</option>
+      </select>
+
+      <select id="filtercategory" onchange="handlecategory()">
+        <option value="">Filter by category</option>
+        <option value="">All</option>
+        <option value="Management">Management</option>
+        <option value="HR">HR</option>
+        <option value="Marketing">Marketing</option>
+        <option value="IT">IT</option>
+      </select>
+    </div>
+
+    <section>
+      <div id="filtered-Data"></div>
+    </section>
+
+    <section id="viewAll-data">
+      <section>
+        <div id="PopularCourse">
+          <div class="coursechild">
+            <span> &nbsp; &nbsp;Course</span>
+            <br />
+            <div class="Java">
+              <img
+                id="Dev"
+                class="Dev"
+                src="https://static1.shine.com/l/m/product_image/images_all/1640851375_8085.png"
+                alt="java logo"
+              />
+              <p>4.5</p>
+            </div>
+            <div class="javacontent">
+              <h2 id="course-name">
+                Backend Developer <br />
+                in Java
+              </h2>
+              <p>TestPrepTraining</p>
+              <p>Duration: 51 Hours | Mode: Online</p>
+              <h3 id="course-price">&#x20B9; 12999</h3>
+            </div>
+            <div class="coursebutton">
+              <button class="coursexplore">Explore</button>
+              <a href="cart.html" id="corseexpert"
+                ><button class="corseexpert">Buy Now</button></a
+              >
+            </div>
+          </div>
+
+          <div class="coursechild">
+            <span>&nbsp; &nbsp;Course</span>
+            <br />
+            <div class="Java">
+              <img
+                id="Dev"
+                class="Dev"
+                src="https://static1.shine.com/l/m/product_image/images_all/1640851637_4621.png"
+                alt="Python logo"
+              />
+              <p>4.5</p>
+            </div>
+            <div class="javacontent">
+              <h2 id="course-name">
+                Backend Developer <br />
+                in Phyton
+              </h2>
+              <p>TestPrepTraining</p>
+              <p>Duration: 20 Hours | Mode: Online</p>
+              <h3 id="course-price">&#x20B9; 12999</h3>
+            </div>
+
+            <div class="coursebutton">
+              <button class="coursexplore">Explore</button>
+              <a href="cart.html" id="corseexpert"
+                ><button class="corseexpert">Buy Now</button></a
+              >
+            </div>
+          </div>
+
+          <div class="coursechild">
+            <span>&nbsp; &nbsp;Course</span>
+            <br />
+            <div class="Java">
+              <img
+                id="Dev"
+                class="Dev"
+                src="https://static1.shine.com/l/m/product_image/images_all/1652953799_9984.png"
+                alt="Node js logo"
+              />
+              <p>4.5</p>
+            </div>
+            <div class="javacontent">
+              <h2 id="course-name">
+                Backend Developer <br />
+                in Node.js
+              </h2>
+              <p>TestPrepTraining</p>
+              <p>Duration: 41 Hours | Mode: Online</p>
+              <h3 id="course-price">&#x20B9; 12999</h3>
+            </div>
+
+            <div class="coursebutton">
+              <button class="coursexplore">Explore</button>
+              <a href="cart.html" id="corseexpert"
+                ><button class="corseexpert">Buy Now</button></a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="viewall-course-images">
+        <h1>Shine Advantage</h1>
+        <div class="viewall-images">
+          <img
+            src="https://learning.shine.com/_next/image?url=https%3A%2F%2Fstatic1.shine.com%2Fl%2Fm%2Fimages%2Fhomepage%2Fbanner%2FFanatical_support_for_outcome.png&w=640&q=75"
+            alt=""
+          />
+          <img
+            src="https://learning.shine.com/_next/image?url=https%3A%2F%2Fstatic1.shine.com%2Fl%2Fm%2Fimages%2Fhomepage%2Fbanner%2FJob_Assistance.png&w=640&q=75"
+            alt=""
+          />
+        </div>
+      </section>
+
+      <section>
+        <div id="PopularCourse">
+          <div class="coursechild">
+            <span> &nbsp; &nbsp;Course</span>
+            <br />
+            <div class="Java">
+              <img
+                id="Dev"
+                class="Dev"
+                src="https://learning.shine.com/_next/image?url=https%3A%2F%2Fstatic1.shine.com%2Fl%2Fm%2Fproduct_image%2Fimages_all%2F1652953980_7255.png&w=1920&q=75"
+                alt="java logo"
+              />
+              <p>4.5</p>
+            </div>
+            <div class="javacontent">
+              <h2 id="course-name">
+                Backend Developer <br />
+                in .Net
+              </h2>
+              <p>TestPrepTraining</p>
+              <p>Duration: 21 Hours | Mode: Online</p>
+              <h3 id="course-price">&#x20B9; 12999</h3>
+            </div>
+            <div class="coursebutton">
+              <button class="coursexplore">Explore</button>
+              <a href="cart.html" id="corseexpert"
+                ><button class="corseexpert">Buy Now</button></a
+              >
+            </div>
+          </div>
+
+          <div class="coursechild">
+            <span>&nbsp; &nbsp;Course</span>
+            <br />
+            <div class="Java">
+              <img
+                id="Dev"
+                class="Dev"
+                src="https://learning.shine.com/_next/image?url=https%3A%2F%2Fstatic1.shine.com%2Fl%2Fm%2Fproduct_image%2Fimages_all%2F1652954044_279.png&w=1920&q=75"
+                alt="Python logo"
+              />
+              <p>4.5</p>
+            </div>
+            <div class="javacontent">
+              <h2 id="course-name">
+                Frontend Developer <br />
+                in React.js
+              </h2>
+              <p>TestPrepTraining</p>
+              <p>Duration: 20 Hours | Mode: Online</p>
+              <h3 id="course-price">&#x20B9; 12999</h3>
+            </div>
+
+            <div class="coursebutton">
+              <button class="coursexplore">Explore</button>
+              <a href="cart.html" id="corseexpert"
+                ><button class="corseexpert">Buy Now</button></a
+              >
+            </div>
+          </div>
+
+          <div class="coursechild">
+            <span>&nbsp; &nbsp;Course</span>
+            <br />
+            <div class="Java">
+              <img
+                id="Dev"
+                class="Dev"
+                src="https://learning.shine.com/_next/image?url=https%3A%2F%2Fstatic1.shine.com%2Fl%2Fm%2Fproduct_image%2Fimages_all%2F1640853726_1126.png&w=1920&q=75"
+                alt="Node js logo"
+              />
+              <p>4.5</p>
+            </div>
+            <div class="javacontent">
+              <h2 id="course-name">
+                Frontend Developer <br />
+                in Angular.js
+              </h2>
+              <p>TestPrepTraining</p>
+              <p>Duration: 41 Hours | Mode: Online</p>
+              <h3 id="course-price">&#x20B9; 12999</h3>
+            </div>
+
+            <div class="coursebutton">
+              <button class="coursexplore">Explore</button>
+              <a href="cart.html" id="corseexpert"
+                ><button class="corseexpert">Buy Now</button></a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div id="PopularCourse">
+          <div class="coursechild">
+            <span> &nbsp; &nbsp;Course</span>
+            <br />
+            <div class="Java">
+              <img
+                id="Dev"
+                class="Dev"
+                src="https://learning.shine.com/_next/image?url=https%3A%2F%2Fstatic1.shine.com%2Fl%2Fm%2Fproduct_image%2Fimages_all%2F1652954087_2845.png&w=1920&q=75"
+                alt="java logo"
+              />
+              <p>4.5</p>
+            </div>
+            <div class="javacontent">
+              <h2 id="course-name">Android Developer <br /></h2>
+              <p>TestPrepTraining</p>
+              <p>Duration: 51 Hours | Mode: Online</p>
+              <h3 id="course-price">&#x20B9; 12999</h3>
+            </div>
+            <div class="coursebutton">
+              <button class="coursexplore">Explore</button>
+              <a href="cart.html" id="corseexpert"
+                ><button class="corseexpert">Buy Now</button></a
+              >
+            </div>
+          </div>
+
+          <div class="coursechild">
+            <span>&nbsp; &nbsp;Course</span>
+            <br />
+            <div class="Java">
+              <img
+                id="Dev"
+                class="Dev"
+                src="https://learning.shine.com/_next/image?url=https%3A%2F%2Fstatic1.shine.com%2Fl%2Fm%2Fattachment%2Fdefault_product_image.jpg&w=1920&q=75s"
+                alt="Python logo"
+              />
+              <p>4.5</p>
+            </div>
+            <div class="javacontent">
+              <h2 id="course-name">
+                CompTIA Security+ Certification <br />
+                Training - SY0-601
+              </h2>
+              <p>TestPrepTraining</p>
+              <p>Duration: 20 Hours | Mode: Online</p>
+              <h3 id="course-price">&#x20B9; 34999</h3>
+            </div>
+
+            <div class="coursebutton">
+              <button class="coursexplore">Explore</button>
+              <a href="cart.html" id="corseexpert"
+                ><button class="corseexpert">Buy Now</button></a
+              >
+            </div>
+          </div>
+
+          <div class="coursechild">
+            <span>&nbsp; &nbsp;Course</span>
+            <br />
+            <div class="Java">
+              <img
+                id="Dev"
+                class="Dev"
+                src="https://learning.shine.com/_next/image?url=https%3A%2F%2Fstatic1.shine.com%2Fl%2Fm%2Fproduct_image%2Fimages_all%2F1542800087_8980.png&w=1920&q=75"
+                alt="Node js logo"
+              />
+              <p>4.5</p>
+            </div>
+            <div class="javacontent">
+              <h2 id="course-name">
+                Digital Marketing Certification <br />
+                Training
+              </h2>
+              <p>TestPrepTraining</p>
+              <p>Duration: 41 Hours | Mode: Online</p>
+              <h3 id="course-price">&#x20B9; 19995</h3>
+            </div>
+
+            <div class="coursebutton">
+              <button class="coursexplore">Explore</button>
+              <a href="cart.html" id="corseexpert"
+                ><button class="corseexpert">Buy Now</button></a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div id="PopularCourse">
+          <div class="coursechild">
+            <span> &nbsp; &nbsp;Course</span>
+            <br />
+            <div class="Java">
+              <img
+                id="Dev"
+                class="Dev"
+                src="https://learning.shine.com/_next/image?url=https%3A%2F%2Fstatic1.shine.com%2Fl%2Fm%2Fproduct_image%2Fimages_all%2F1508900890_4134.png&w=1920&q=75"
+                alt="java logo"
+              />
+              <p>4.5</p>
+            </div>
+            <div class="javacontent">
+              <h2 id="course-name">Marketing Essentials <br /></h2>
+              <p>TestPrepTraining</p>
+              <p>Duration: 51 Hours | Mode: Online</p>
+              <h3 id="course-price">&#x20B9; 9620</h3>
+            </div>
+            <div class="coursebutton">
+              <button class="coursexplore">Explore</button>
+              <a href="cart.html" id="corseexpert"
+                ><button class="corseexpert">Buy Now</button></a
+              >
+            </div>
+          </div>
+
+          <div class="coursechild">
+            <span>&nbsp; &nbsp;Course</span>
+            <br />
+            <div class="Java">
+              <img
+                id="Dev"
+                class="Dev"
+                src="https://learning.shine.com/_next/image?url=https%3A%2F%2Fstatic1.shine.com%2Fl%2Fm%2Fproduct_image%2Fimages_all%2F1652954139_2930.png&w=1920&q=75"
+                alt="Python logo"
+              />
+              <p>4.5</p>
+            </div>
+            <div class="javacontent">
+              <h2 id="course-name">
+                Mastering Google <br />
+                Analytics
+              </h2>
+              <p>TestPrepTraining</p>
+              <p>Duration: 20 Hours | Mode: Online</p>
+              <h3 id="course-price">&#x20B9; 7999</h3>
+            </div>
+
+            <div class="coursebutton">
+              <button class="coursexplore">Explore</button>
+              <a href="cart.html" id="corseexpert"
+                ><button class="corseexpert">Buy Now</button></a
+              >
+            </div>
+          </div>
+
+          <div class="coursechild">
+            <span>&nbsp; &nbsp;Course</span>
+            <br />
+            <div class="Java">
+              <img
+                id="Dev"
+                class="Dev"
+                src="https://learning.shine.com/_next/image?url=https%3A%2F%2Fstatic1.shine.com%2Fl%2Fm%2Fproduct_image%2Fimages_all%2F1564143982_3906.png&w=1920&q=75"
+                alt="Node js logo"
+              />
+              <p>4.5</p>
+            </div>
+            <div class="javacontent">
+              <h2 id="course-name">
+                Human Resources Management<br />
+                Training
+              </h2>
+              <p>TestPrepTraining</p>
+              <p>Duration: 41 Hours | Mode: Online</p>
+              <h3 id="course-price">&#x20B9; 12999</h3>
+            </div>
+
+            <div class="coursebutton">
+              <button class="coursexplore">Explore</button>
+              <a href="cart.html" id="corseexpert"
+                ><button class="corseexpert">Buy Now</button></a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div id="PopularCourse">
+          <div class="coursechild">
+            <span> &nbsp; &nbsp;Course</span>
+            <br />
+            <div class="Java">
+              <img
+                id="Dev"
+                class="Dev"
+                src="https://learning.shine.com/_next/image?url=https%3A%2F%2Fstatic1.shine.com%2Fl%2Fm%2Fproduct_image%2Fimages_all%2F1634126540_4125.png&w=1920&q=75"
+                alt="java logo"
+              />
+              <p>4.5</p>
+            </div>
+            <div class="javacontent">
+              <h2 id="course-name">
+                Certified HR Analytics <br />
+                Professional
+              </h2>
+              <p>TestPrepTraining</p>
+              <p>Duration: 51 Hours | Mode: Online</p>
+              <h3 id="course-price">&#x20B9; 3499</h3>
+            </div>
+            <div class="coursebutton">
+              <button class="coursexplore">Explore</button>
+              <a href="cart.html" id="corseexpert"
+                ><button class="corseexpert">Buy Now</button></a
+              >
+            </div>
+          </div>
+
+          <div class="coursechild">
+            <span>&nbsp; &nbsp;Course</span>
+            <br />
+            <div class="Java">
+              <img
+                id="Dev"
+                class="Dev"
+                src="https://learning.shine.com/_next/image?url=https%3A%2F%2Fstatic1.shine.com%2Fl%2Fm%2Fproduct_image%2Fimages_all%2F1640689215_9063.png&w=1920&q=75"
+                alt="Python logo"
+              />
+              <p>4.5</p>
+            </div>
+            <div class="javacontent">
+              <h2 id="course-name">Management Bootcamp <br /></h2>
+              <p>TestPrepTraining</p>
+              <p>Duration: 20 Hours | Mode: Online</p>
+              <h3 id="course-price">&#x20B9; 8000</h3>
+            </div>
+
+            <div class="coursebutton">
+              <button class="coursexplore">Explore</button>
+              <a href="cart.html" id="corseexpert"
+                ><button class="corseexpert">Buy Now</button></a
+              >
+            </div>
+          </div>
+
+          <div class="coursechild">
+            <span>&nbsp; &nbsp;Course</span>
+            <br />
+            <div class="Java">
+              <img
+                id="Dev"
+                class="Dev"
+                src="https://learning.shine.com/_next/image?url=https%3A%2F%2Fstatic1.shine.com%2Fl%2Fm%2Fproduct_image%2Fimages_all%2F1508160736_4805.png&w=1920&q=75"
+                alt="Node js logo"
+              />
+              <p>4.5</p>
+            </div>
+            <div class="javacontent">
+              <h2 id="course-name">
+                Certified Manager for Quality <br />
+                and Organisational
+              </h2>
+              <p>TestPrepTraining</p>
+              <p>Duration: 41 Hours | Mode: Online</p>
+              <h3 id="course-price">&#x20B9; 11360</h3>
+            </div>
+
+            <div class="coursebutton">
+              <button class="coursexplore">Explore</button>
+              <a href="cart.html" id="corseexpert"
+                ><button class="corseexpert">Buy Now</button></a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div id="PopularCourse">
+          <div class="coursechild">
+            <span> &nbsp; &nbsp;Course</span>
+            <br />
+            <div class="Java">
+              <img
+                id="Dev"
+                class="Dev"
+                src="https://learning.shine.com/_next/image?url=https%3A%2F%2Fstatic1.shine.com%2Fl%2Fm%2Fproduct_image%2Fimages_all%2F1617699867_4091.png&w=1920&q=75"
+                alt="java logo"
+              />
+              <p>4.5</p>
+            </div>
+            <div class="javacontent">
+              <h2 id="course-name">
+                Master of Project <br />
+                Management
+              </h2>
+              <p>TestPrepTraining</p>
+              <p>Duration: 51 Hours | Mode: Online</p>
+              <h3 id="course-price">&#x20B9; 19999</h3>
+            </div>
+            <div class="coursebutton">
+              <button class="coursexplore">Explore</button>
+              <a href="cart.html" id="corseexpert"
+                ><button class="corseexpert">Buy Now</button></a
+              >
+            </div>
+          </div>
+
+          <div class="coursechild">
+            <span>&nbsp; &nbsp;Course</span>
+            <br />
+            <div class="Java">
+              <img
+                id="Dev"
+                class="Dev"
+                src="https://learning.shine.com/_next/image?url=https%3A%2F%2Fstatic1.shine.com%2Fl%2Fm%2Fproduct_image%2Fimages_all%2F1579153944_2178.png&w=1920&q=75"
+                alt="Python logo"
+              />
+              <p>4.5</p>
+            </div>
+            <div class="javacontent">
+              <h2 id="course-name">
+                Management Fundamentals <br />
+                Training Course
+              </h2>
+              <p>TestPrepTraining</p>
+              <p>Duration: 20 Hours | Mode: Online</p>
+              <h3 id="course-price">&#x20B9; 16499</h3>
+            </div>
+
+            <div class="coursebutton">
+              <button class="coursexplore">Explore</button>
+              <a href="cart.html" id="corseexpert"
+                ><button class="corseexpert">Buy Now</button></a
+              >
+            </div>
+          </div>
+
+          <div class="coursechild">
+            <span>&nbsp; &nbsp;Course</span>
+            <br />
+            <div class="Java">
+              <img
+                id="Dev"
+                class="Dev"
+                src="https://learning.shine.com/_next/image?url=https%3A%2F%2Fstatic1.shine.com%2Fl%2Fm%2Fproduct_image%2Fimages_all%2F1588266994_3384.png&w=1920&q=75"
+                alt="Node js logo"
+              />
+              <p>4.5</p>
+            </div>
+            <div class="javacontent">
+              <h2 id="course-name">
+                Management Fundamentals Training<br />
+                & Certification
+              </h2>
+              <p>TestPrepTraining</p>
+              <p>Duration: 41 Hours | Mode: Online</p>
+              <h3 id="course-price">&#x20B9; 19999</h3>
+            </div>
+
+            <div class="coursebutton">
+              <button class="coursexplore">Explore</button>
+              <a href="cart.html" id="corseexpert"
+                ><button class="corseexpert">Buy Now</button></a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div id="PopularCourse">
+          <div class="coursechild">
+            <span> &nbsp; &nbsp;Course</span>
+            <br />
+            <div class="Java">
+              <img
+                id="Dev"
+                class="Dev"
+                src="https://learning.shine.com/_next/image?url=https%3A%2F%2Fstatic1.shine.com%2Fl%2Fm%2Fattachment%2Fdefault_product_image.jpg&w=1920&q=75"
+                alt="java logo"
+              />
+              <p>4.5</p>
+            </div>
+            <div class="javacontent">
+              <h2 id="course-name">
+                Advanced MS Excel 2016 <br />
+                Certification Training
+              </h2>
+              <p>TestPrepTraining</p>
+              <p>Duration: 51 Hours | Mode: Online</p>
+              <h3 id="course-price">&#x20B9; 8475</h3>
+            </div>
+            <div class="coursebutton">
+              <button class="coursexplore">Explore</button>
+              <a href="cart.html" id="corseexpert"
+                ><button class="corseexpert">Buy Now</button></a
+              >
+            </div>
+          </div>
+
+          <div class="coursechild">
+            <span>&nbsp; &nbsp;Course</span>
+            <br />
+            <div class="Java">
+              <img
+                id="Dev"
+                class="Dev"
+                src="https://learning.shine.com/_next/image?url=https%3A%2F%2Fstatic1.shine.com%2Fl%2Fm%2Fproduct_image%2Fimages_all%2F1508153062_3057.png&w=1920&q=75"
+                alt="Python logo"
+              />
+              <p>4.5</p>
+            </div>
+            <div class="javacontent">
+              <h2 id="course-name">Business Communication Specialist <br /></h2>
+              <p>TestPrepTraining</p>
+              <p>Duration: 20 Hours | Mode: Online</p>
+              <h3 id="course-price">&#x20B9; 3499</h3>
+            </div>
+
+            <div class="coursebutton">
+              <button class="coursexplore">Explore</button>
+              <a href="cart.html" id="corseexpert"
+                ><button class="corseexpert">Buy Now</button></a
+              >
+            </div>
+          </div>
+
+          <div class="coursechild">
+            <span>&nbsp; &nbsp;Course</span>
+            <br />
+            <div class="Java">
+              <img
+                id="Dev"
+                class="Dev"
+                src="https://learning.shine.com/_next/image?url=https%3A%2F%2Fstatic1.shine.com%2Fl%2Fm%2Fattachment%2Fdefault_product_image.jpg&w=1920&q=75"
+                alt="Node js logo"
+              />
+              <p>4.5</p>
+            </div>
+            <div class="javacontent">
+              <h2 id="course-name">
+                Certiication in Concrete <br />
+                Testing
+              </h2>
+              <p>TestPrepTraining</p>
+              <p>Duration: 41 Hours | Mode: Online</p>
+              <h3 id="course-price">&#x20B9; 200</h3>
+            </div>
+
+            <div class="coursebutton">
+              <button class="coursexplore">Explore</button>
+              <a href="cart.html" id="corseexpert"
+                ><button class="corseexpert">Buy Now</button></a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+    </section>
+
+    <footer id="footer-section-v">
+      <div id="v_footer">
+        <div>
+          <ul class="v_unorderedlist">
+            <li id="v_unorderedlist-shine-logo">
+              <a href="Index.html"
+                ><img
+                  src="https://www.shine.com/next/static/images/shine-logo.png"
+                  alt="shine"
+                  height="50px"
+                  width="50px"
+              /></a>
+            </li>
+            <li>
+              <p>Great careers start here</p>
+            </li>
+            <li>
+              <p><b>Download Shine App</b></p>
+            </li>
+            <li>
+              <a
+                href="https://play.google.com/store/apps/details?id=com.net.shine&referrer=utm_source%3Ddesktop%26utm_medium%3Dorganic"
+                ><img
+                  src="https://helios-i.mashable.com/imagery/articles/04EZglaVzAW19V6FIiDD3TA/images-1.fit_lim.size_376x.png"
+                  alt="playstorelogo"
+                  height="30px"
+                  width="30px"
+              /></a>
+              <a
+                href="https://itunes.apple.com/in/app/shine.com-job-search/id950558510?ls=1&mt=8&utm_source=Shinewebpage&utm_medium=banner&utm_campaign=ios_app"
+                ><img
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYQYWRq6ZUG7H_Q2OdZmca455MXUBbWGFRsg&usqp=CAU"
+                  alt="applelogo"
+                  height="30px"
+                  width="30px"
+              /></a>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <ul class="v_unorderedlist">
+            <li>
+              <p><b>JOB SEEKERS</b></p>
+            </li>
+            <li>
+              <a href="">Register / Login</a>
+            </li>
+            <li>
+              <a href="">Browse Jobs </a>
+            </li>
+            <li>
+              <a href="">Create Free Job Alert </a>
+            </li>
+            <li>
+              <a href="">Job Assistance Service</a>
+            </li>
+            <li>
+              <a href="">Courses</a>
+            </li>
+          </ul>
+        </div>
+
+        <div>
+          <ul class="v_unorderedlist">
+            <li>
+              <p><b>EMPLOYMENT</b></p>
+            </li>
+            <li><a href="">Recruiter India</a> <br /></li>
+            <li>
+              <a href="">Post Job</a>
+            </li>
+          </ul>
+        </div>
+
+        <div>
+          <ul class="v_unorderedlist">
+            <li>
+              <p><b>PARTNER SITES</b></p>
+            </li>
+            <li><a href="" target="_blank">English Mate</a><br /></li>
+            <li><a href="" target="_blank">Study Mate</a><br /></li>
+            <li>
+              <a href="https://www.hindustantimes.com/" target="_blank"
+                >Hindustantimes.com</a
+              ><br />
+            </li>
+            <li>
+              <a href="https://www.livemint.com/" target="_blank"
+                >Livemint.com</a
+              ><br />
+            </li>
+            <li>
+              <a href="https://www.livehindustan.com/" target="_blank"
+                >Livehindustan.com</a
+              ><br />
+            </li>
+            <li>
+              <a href="https://www.ottplay.com/" target="_blank">OTTplay.com</a
+              ><br />
+            </li>
+          </ul>
+        </div>
+        <div>
+          <ul class="v_unorderedlist" id="v_contactus">
+            <li>
+              <p><b>Contact Us</b></p>
+            </li>
+            <li>
+              <p>080-1006-2222</p>
+            </li>
+            <li><a href="">contactus@shine.com</a><br /><br /></li>
+            <li>
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsz5egFTN3nuQYiPPkG_5Ga1H04zDkhNbIPA&usqp=CAU"
+                alt="linkedin"
+                height="20px"
+                width="20px"
+              />
+              <img
+                src="https://cdn.iconscout.com/icon/free/png-128/twitter-241-721979.png"
+                alt="twitter"
+                height="20px"
+                width="20px"
+              />
+              <img
+                src="https://cdn.iconscout.com/icon/free/png-128/facebook-262-721949.png"
+                alt="facebook"
+                height="20px"
+                width="20px"
+              />
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div id="bottom">
+        <div>
+          <p>
+            Feedback | FAQs | About Us |Contact Us | Privacy Policy | Cookie
+            Policy | Fraud Alert | Business News | English News | Terms &
+            Conditions | Disclaimer | Report a Job Posting
+          </p>
+        </div>
+        <div>
+          <p>© 2022 HT Media Limited</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="viewallfilter.js" async></script>
+    <script src="index.js" async></script>
+  </body>
+</html>
